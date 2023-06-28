@@ -4145,7 +4145,7 @@
                   : i && "set" in i && void 0 !== (r = i.set(e, n, t))
                   ? r
                   //Webflow Badge
-                  // : (e.setAttribute(t, n + ""), n)
+                   :n
                 : i && "get" in i && null !== (r = i.get(e, t))
                 ? r
                 : null == (r = S.find.attr(e, t))
