@@ -2227,6 +2227,7 @@ textarea.w-input, textarea.w-select {
 .body {
   height: 100%;
   background-image: url("https://uploads-ssl.webflow.com/649c71ef504108c1fc4b2575/649c75293230615831e0f356_bg.jpg");
+  opacity: 50%;
   background-position: 0 0;
   background-size: auto;
 }
