@@ -2109,6 +2109,8 @@ textarea.w-input, textarea.w-select {
 .section {
   width: 100%;
   height: 100%;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, .3);
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -2227,7 +2229,6 @@ textarea.w-input, textarea.w-select {
 .body {
   height: 100%;
   background-image: url("https://uploads-ssl.webflow.com/649c71ef504108c1fc4b2575/649c75293230615831e0f356_bg.jpg");
-  opacity: 50%;
   background-position: 0 0;
   background-size: auto;
 }
