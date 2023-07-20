@@ -2342,15 +2342,17 @@ textarea.w-input, textarea.w-select {
   .photo {
     width: 9rem;
     height: 9rem;
+    margin-top: 0;
   }
 
   .heading {
     margin-top: .25rem;
+    margin-bottom: .25rem;
     font-size: 1.7rem;
   }
 
   .personal_name {
-    padding-top: 1rem;
+    padding-top: .25rem;
     padding-bottom: .25rem;
     font-size: 1.3rem;
   }
@@ -2373,6 +2375,22 @@ textarea.w-input, textarea.w-select {
   .text-block {
     -webkit-text-stroke-color: #a3957d;
     background-color: #fdfcf4;
+    margin-top: .5rem;
+    margin-bottom: 0;
+  }
+
+  .links-div {
+    grid-row-gap: 2px;
+    grid-template-columns: minmax(100%, 2.75fr);
+    grid-template-areas: "Area"
+                         "Area-2"
+                         "Area-3"
+                         "Area-4"
+                         "Area-5"
+                         "Area-6"
+                         "Area-7"
+                         "Area-15";
+    grid-auto-columns: minmax(0%, 0%);
   }
 }
 
