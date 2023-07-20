@@ -2307,4 +2307,8 @@ textarea.w-input, textarea.w-select {
     background-position: 0 0;
     background-size: auto;
   }
+
+  .text-block {
+    background-color: #fdfcf4;
+  }
 }
