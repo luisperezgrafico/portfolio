@@ -2153,13 +2153,15 @@ textarea.w-input, textarea.w-select {
 }
 
 .heading {
-  color: #a58b5b;
+  color: #c59741;
   text-align: center;
   letter-spacing: -1px;
+  text-shadow: 0 2px #fff;
   margin-top: -6px;
   margin-bottom: 10px;
-  font-family: Merriweather, serif;
+  font-family: Inter, sans-serif;
   font-size: 2.2rem;
+  font-style: normal;
   font-weight: 700;
 }
 
@@ -2168,7 +2170,7 @@ textarea.w-input, textarea.w-select {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: .75rem;
-  font-family: Bitter, serif;
+  font-family: Ubuntu, Helvetica, sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -2271,7 +2273,8 @@ textarea.w-input, textarea.w-select {
                  "Area-12 Area-5"
                  "Area-14 Area-6"
                  "Area-13 Area-7"
-                 ". Area-15"
+                 "Area-17 Area-15"
+                 ". Area-16"
                  / .5fr 4fr;
   grid-auto-columns: 1fr;
   display: grid;
@@ -2453,7 +2456,17 @@ textarea.w-input, textarea.w-select {
 }
 
 #w-node-_077390a0-5c1a-edaf-072f-9b71fe226917-fc4b2579 {
+  grid-area: Area-16;
+}
+
+#w-node-_182b89c7-ecc3-8bbb-3c29-a075871da3ab-fc4b2579 {
   grid-area: Area-15;
+}
+
+#w-node-_8f75efce-9ac0-9dc9-588b-050915616e8e-fc4b2579 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: center;
+  justify-self: start;
 }
 
 @media screen and (max-width: 767px) {
