@@ -2392,7 +2392,8 @@ textarea.w-input, textarea.w-select {
                          "Area-5"
                          "Area-6"
                          "Area-7"
-                         "Area-15";
+                         "Area-15"
+                         "Area-16";
     grid-auto-columns: minmax(0%, 0%);
   }
 }
