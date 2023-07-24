@@ -2110,7 +2110,7 @@ textarea.w-input, textarea.w-select {
   width: 100%;
   height: 100%;
   opacity: 1;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: rgba(255, 255, 255, .26);
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -2119,9 +2119,11 @@ textarea.w-input, textarea.w-select {
   bottom: 0%;
   left: 0%;
   right: 0%;
+  overflow: auto;
 }
 
 .container {
+  width: 650px;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, .88);
@@ -2130,7 +2132,7 @@ textarea.w-input, textarea.w-select {
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 2rem 8rem 2rem 7.5rem;
+  padding: 2rem 6rem;
   display: flex;
   box-shadow: 0 0 20px 7px rgba(0, 0, 0, .3);
 }
@@ -2247,13 +2249,17 @@ textarea.w-input, textarea.w-select {
 
 .body {
   height: 100%;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background-color: #fff;
   background-image: url("https://uploads-ssl.webflow.com/649c71ef504108c1fc4b2575/649c75293230615831e0f356_bg.jpg");
   background-position: 0 0;
-  background-size: auto;
+  background-size: cover;
+  flex-direction: row;
 }
 
 .text-block {
-  max-width: 25rem;
+  width: 100%;
   color: #6f624d;
   text-align: center;
   background-color: #f8f7ee;
@@ -2387,20 +2393,47 @@ textarea.w-input, textarea.w-select {
 }
 
 .button-col {
-  padding-left: 0;
+  padding-left: 1rem;
   padding-right: 0;
 }
 
 @media screen and (max-width: 767px) {
   .container {
+    width: auto;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 0;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 
+  .heading {
+    color: #5c5b5a;
+    text-shadow: none;
+  }
+
+  .get-in-touch {
+    background-color: #4d4acc;
+    background-image: none;
+  }
+
+  .get-in-touch:hover {
+    background-color: #6765e4;
+  }
+
   .body {
-    background-color: rgba(139, 115, 69, .21);
-    background-image: url("https://uploads-ssl.webflow.com/649c71ef504108c1fc4b2575/649c75293230615831e0f356_bg.jpg");
+    background-color: rgba(190, 190, 190, .2);
+    background-image: none;
     background-size: auto;
+  }
+
+  .text-block {
+    color: #505050;
+    -webkit-text-stroke-color: #a3957d;
+    background-image: linear-gradient(220deg, #f8f8f8, #fff);
+    border-color: #cecece;
   }
 
   .icon-col {
