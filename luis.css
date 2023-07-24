@@ -2153,7 +2153,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .heading {
-  color: #c59741;
+  color: #b3935a;
   text-align: center;
   letter-spacing: -1px;
   text-shadow: 0 2px #fff;
@@ -2170,7 +2170,7 @@ textarea.w-input, textarea.w-select {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: .75rem;
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -2181,7 +2181,7 @@ textarea.w-input, textarea.w-select {
 
 .button {
   width: 100%;
-  height: 60px;
+  height: 4rem;
   color: #414141;
   background-color: rgba(255, 255, 255, .8);
   border: 1px solid #d4d4d4;
@@ -2221,7 +2221,7 @@ textarea.w-input, textarea.w-select {
 .get-in-touch {
   height: 3rem;
   background-color: #a58b5b;
-  background-image: linear-gradient(#cf9832, #cf9832);
+  background-image: linear-gradient(#b48b3e, #b48b3e);
   border: 1px solid #a08450;
   border-radius: 2px;
   flex-direction: column;
@@ -2236,7 +2236,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .get-in-touch:hover {
-  background-color: #df9f29;
+  background-color: #cc9f4a;
   background-image: none;
 }
 
@@ -2261,6 +2261,7 @@ textarea.w-input, textarea.w-select {
   border-radius: 9px;
   margin-top: 1rem;
   padding: 1rem;
+  font-family: Varela Round, sans-serif;
 }
 
 .links-div {
@@ -2275,6 +2276,7 @@ textarea.w-input, textarea.w-select {
                  "Area-13 Area-7"
                  "Area-17 Area-15"
                  ". Area-16"
+                 "Area-19 Area-18"
                  / .5fr 4fr;
   grid-auto-columns: 1fr;
   display: grid;
@@ -2308,6 +2310,87 @@ textarea.w-input, textarea.w-select {
   right: 0%;
 }
 
+.columns {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
+.column, .column-2 {
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+}
+
+.links-div-2 {
+  grid-column-gap: 9px;
+  grid-row-gap: 7px;
+  flex-direction: column;
+  grid-template: "Area-9 Area"
+                 "Area-8 Area-2"
+                 "Area-10 Area-3"
+                 "Area-11 Area-4"
+                 "Area-12 Area-5"
+                 "Area-14 Area-6"
+                 "Area-13 Area-7"
+                 "Area-17 Area-15"
+                 ". Area-16"
+                 "Area-19 Area-18"
+                 / .5fr 4fr;
+  grid-auto-columns: 1fr;
+  display: flex;
+}
+
+.links-container {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+}
+
+.icon-col {
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+}
+
+.button-div {
+  width: 100%;
+  height: 60px;
+  color: #414141;
+  background-color: rgba(255, 255, 255, .8);
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+  padding-left: 1.5rem;
+  font-family: Varela Round, sans-serif;
+  font-size: 16px;
+  display: flex;
+  box-shadow: 0 3px 4px -4px rgba(44, 33, 13, .46);
+}
+
+.button-div:hover {
+  color: #e9e9e9;
+}
+
+.button-col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media screen and (max-width: 767px) {
   .container {
     padding-left: 2.5rem;
@@ -2319,15 +2402,18 @@ textarea.w-input, textarea.w-select {
     background-image: url("https://uploads-ssl.webflow.com/649c71ef504108c1fc4b2575/649c75293230615831e0f356_bg.jpg");
     background-size: auto;
   }
+
+  .icon-col {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .section {
     height: 100vh;
-    background-position: 0 0;
-    background-repeat: repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, .3);
+    background-image: none;
+    background-size: auto;
     display: flex;
   }
 
@@ -2349,40 +2435,57 @@ textarea.w-input, textarea.w-select {
   }
 
   .heading {
-    margin-top: .25rem;
+    color: #5c5b5a;
+    text-shadow: none;
+    margin-top: 0;
     margin-bottom: .25rem;
     font-size: 1.7rem;
   }
 
   .personal_name {
+    color: #7e7e7e;
     padding-top: .25rem;
-    padding-bottom: .25rem;
+    padding-bottom: 0;
+    font-family: Montserrat, sans-serif;
     font-size: 1.3rem;
   }
 
   .spacing-l {
-    height: 2rem;
+    height: 1rem;
   }
 
   .button:hover {
     color: #424141;
   }
 
+  .get-in-touch {
+    background-color: #4d4acc;
+    background-image: none;
+    border-color: rgba(160, 132, 80, 0);
+  }
+
+  .get-in-touch:hover {
+    background-color: #6765e4;
+  }
+
   .body {
     height: 100%;
+    background-color: rgba(190, 190, 190, .21);
     background-image: none;
-    background-position: 0 0;
     background-size: auto;
   }
 
   .text-block {
+    color: #505050;
     -webkit-text-stroke-color: #a3957d;
-    background-color: #fdfcf4;
+    background-color: #fff;
+    background-image: linear-gradient(256deg, #f8f8f8, #fff);
+    border-color: #cecece;
     margin-top: .5rem;
     margin-bottom: 0;
   }
 
-  .links-div {
+  .links-div, .links-div-2 {
     grid-row-gap: 2px;
     grid-template-columns: minmax(100%, 2.75fr);
     grid-template-areas: "Area"
@@ -2396,52 +2499,24 @@ textarea.w-input, textarea.w-select {
                          "Area-16";
     grid-auto-columns: minmax(0%, 0%);
   }
+
+  .icon-col {
+    display: none;
+  }
+
+  .button-div:hover {
+    color: #424141;
+  }
 }
 
-#w-node-d3cda68c-5b27-9745-3153-4039c7079423-fc4b2579 {
-  grid-area: Area;
-}
-
-#w-node-_5f95dc62-fecf-86e0-5fc3-f591f3ac5a5e-fc4b2579 {
-  grid-area: Area-2;
-}
-
-#w-node-_7d7db206-03e9-246f-7d8b-eb6e48992000-fc4b2579 {
-  grid-area: Area-8;
+#w-node-c7922da0-ca5f-1213-49da-01ab38f583b7-fc4b2579 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
   align-self: center;
   justify-self: start;
 }
 
-#w-node-e8f25f66-1274-e9dc-43fa-7c9debc4d11d-fc4b2579 {
-  grid-area: Area-3;
-}
-
-#w-node-_860bbc8e-ee9e-fb82-6ba2-a56b8f64beb2-fc4b2579 {
-  grid-area: Area-4;
-}
-
-#w-node-f4cb2b74-741e-dc1e-9be9-fd8a207b0147-fc4b2579 {
-  grid-area: Area-5;
-}
-
-#w-node-_532c8356-265c-7356-4177-af6162e1f991-fc4b2579 {
+#w-node-c7922da0-ca5f-1213-49da-01ab38f583b9-fc4b2579 {
   grid-area: Area-6;
-}
-
-#w-node-d0c92404-40fe-33bc-505b-b5fc21663ae4-fc4b2579 {
-  grid-area: Area-7;
-}
-
-#w-node-f3fa4e75-4a33-12ff-cbfa-9aac07aa55b8-fc4b2579 {
-  grid-area: Area-11;
-  align-self: center;
-  justify-self: start;
-}
-
-#w-node-_208c8668-c02b-0420-71bb-604f98393b0f-fc4b2579 {
-  grid-area: Area-13;
-  align-self: center;
-  justify-self: start;
 }
 
 #w-node-c3a8fab3-36d7-c600-036b-a18a51a91f9a-fc4b2579 {
@@ -2450,44 +2525,106 @@ textarea.w-input, textarea.w-select {
   justify-self: start;
 }
 
-#w-node-_61bd9d9b-6c60-87ea-8c7b-8e4a649b5b99-fc4b2579, #w-node-d6be607a-5eec-07e4-e178-919d0e5dd130-fc4b2579, #w-node-_74a84fd3-dcea-1262-a938-42031743658c-fc4b2579 {
+#w-node-d3cda68c-5b27-9745-3153-4039c7079423-fc4b2579 {
+  grid-area: Area;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a32-fc4b2579 {
+  grid-area: Area-8;
+  align-self: center;
+  justify-self: start;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a2e-fc4b2579 {
+  grid-area: Area-2;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a4a-fc4b2579 {
   grid-area: span 1 / span 1 / span 1 / span 1;
   align-self: center;
   justify-self: start;
 }
 
-#w-node-_077390a0-5c1a-edaf-072f-9b71fe226917-fc4b2579 {
-  grid-area: Area-16;
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a33-fc4b2579 {
+  grid-area: Area-3;
 }
 
-#w-node-_182b89c7-ecc3-8bbb-3c29-a075871da3ab-fc4b2579 {
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a47-fc4b2579 {
+  grid-area: Area-11;
+  align-self: center;
+  justify-self: start;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a37-fc4b2579 {
+  grid-area: Area-4;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a4b-fc4b2579 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: center;
+  justify-self: start;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a3b-fc4b2579 {
+  grid-area: Area-5;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a4c-fc4b2579 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: center;
+  justify-self: start;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a3f-fc4b2579 {
+  grid-area: Area-6;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a48-fc4b2579 {
+  grid-area: Area-13;
+  align-self: center;
+  justify-self: start;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a43-fc4b2579 {
+  grid-area: Area-7;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a53-fc4b2579 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: center;
+  justify-self: start;
+}
+
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a4f-fc4b2579 {
   grid-area: Area-15;
 }
 
-#w-node-_8f75efce-9ac0-9dc9-588b-050915616e8e-fc4b2579 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
-  align-self: center;
-  justify-self: start;
+#w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a4d-fc4b2579 {
+  grid-area: Area-16;
 }
 
 @media screen and (max-width: 767px) {
-  #w-node-_7d7db206-03e9-246f-7d8b-eb6e48992000-fc4b2579 {
-    grid-area: Area-8;
+  #w-node-c7922da0-ca5f-1213-49da-01ab38f583b7-fc4b2579 {
+    grid-area: Area-14;
   }
 
   #w-node-c3a8fab3-36d7-c600-036b-a18a51a91f9a-fc4b2579 {
     grid-area: Area-9;
   }
 
-  #w-node-_61bd9d9b-6c60-87ea-8c7b-8e4a649b5b99-fc4b2579 {
+  #w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a32-fc4b2579 {
+    grid-area: Area-8;
+  }
+
+  #w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a4a-fc4b2579 {
     grid-area: Area-10;
   }
 
-  #w-node-d6be607a-5eec-07e4-e178-919d0e5dd130-fc4b2579 {
+  #w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a4b-fc4b2579 {
     grid-area: Area-12;
   }
 
-  #w-node-_74a84fd3-dcea-1262-a938-42031743658c-fc4b2579 {
+  #w-node-cdfdb2cd-891e-8c2c-110e-e48b56807a4c-fc4b2579 {
     grid-area: Area-14;
   }
 }
