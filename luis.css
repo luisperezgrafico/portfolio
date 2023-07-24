@@ -2540,6 +2540,10 @@ textarea.w-input, textarea.w-select {
   .button-div:hover {
     color: #424141;
   }
+
+  .button-col {
+    padding-left: 0;
+  }
 }
 
 #w-node-c7922da0-ca5f-1213-49da-01ab38f583b7-fc4b2579 {
