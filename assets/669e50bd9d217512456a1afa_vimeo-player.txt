@@ -1,0 +1,84 @@
+const vimeoPlayers = [];
+
+function initVimeoPlayer(containerId, autoplayOnLoad = false) {
+    const container = document.getElementById(containerId);
+    const playerElement = container.querySelector('.vimeo-player');
+    const overlay = container.querySelector('.vimeo-overlay');
+
+    // Create player options
+    const options = {
+        id: parseInt(playerElement.getAttribute('src').split('/').pop().split('?')[0]),
+        controls: false,
+        loop: true,
+        autoplay: autoplayOnLoad,
+        autopause: false,
+        muted: true  // Mute the video to allow autoplay
+    };
+
+    // Create player
+    const player = new Vimeo.Player(playerElement, options);
+
+    let isPlaying = false;
+
+    player.ready().then(() => {
+        container.addEventListener('click', togglePlayPause);
+        player.on('play', () => {
+            overlay.classList.add('hidden');
+            isPlaying = true;
+            pauseOtherPlayers(player);
+        });
+        player.on('pause', () => {
+            overlay.classList.remove('hidden');
+            isPlaying = false;
+        });
+        player.on('ended', () => player.play());
+        
+        if (!autoplayOnLoad) {
+            overlay.classList.remove('hidden');
+        }
+    });
+
+    function togglePlayPause(event) {
+        event.preventDefault();
+        if (isPlaying) {
+            player.pause();
+        } else {
+            player.play();
+        }
+    }
+
+    // Add this player to the global array
+    vimeoPlayers.push(player);
+}
+
+function pauseOtherPlayers(currentPlayer) {
+    vimeoPlayers.forEach(player => {
+        if (player !== currentPlayer) {
+            player.pause();
+        }
+    });
+}
+
+// Initialize all Vimeo players when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    const containers = document.querySelectorAll('.vimeo-container');
+    containers.forEach(container => {
+        initVimeoPlayer(container.id);
+    });
+});
+
+// Execute the script
+(function() {
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initAllPlayers);
+    } else {
+        initAllPlayers();
+    }
+
+    function initAllPlayers() {
+        const containers = document.querySelectorAll('.vimeo-container');
+        containers.forEach(container => {
+            initVimeoPlayer(container.id);
+        });
+    }
+})();
