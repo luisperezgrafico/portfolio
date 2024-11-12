@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
-<!-- This site was created in Webflow. https://webflow.com -->
-<!-- Last Published: Tue Nov 12 2024 16:28:58 GMT+0000 (Coordinated Universal Time) -->
+
+
 <html data-wf-domain="luis-portfolio-01.webflow.io" data-wf-page="66b4b42773fcdb5fec01f2aa" data-wf-site="666442ad532fbc42e5295b99" data-wf-status="1" lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -14,7 +14,7 @@
 <meta content="Webflow" name="generator"/>
 <link href="/assets/css/luis-portfolio-01.webflow.baf7c3b74.css" rel="stylesheet" type="text/css"/>
 <link href="/assets/fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="anonymous" href="/assets/fonts.gstatic.com" rel="preconnect"/>
+<link href="/assets/fonts.gstatic.com" rel="preconnect"/>
 <script src="/assets/js/webfont.js" type="text/javascript">
 </script>
 <script type="text/javascript">
@@ -26,15 +26,15 @@
 <link href="/assets/img/66a0c2c92c500c332b80472f_favicon.jpg" rel="shortcut icon" type="image/x-icon"/>
 <link href="/assets/img/66a0c2cd679d4ccc0e56d9eb_webclip.jpg" rel="apple-touch-icon"/>
 <link href="/assets/css/swiper-bundle.min.css" rel="stylesheet"/>
-<!--jQuery required for Scrollify & Carusel Slider-->
+
 <script src="/assets/js/jquery.min.js">
 </script>
-<!--Vimeo Scripts-->
+
 <script defer="" src="/assets/js/player.js">
 </script>
 <script defer="" src="/assets/documents/669e50bd9d217512456a1afa_vimeo-player.txt">
 </script>
-<!--Style and script for Vimeo videos-->
+
 <style>
    .vimeo-container,
     .video-container {
@@ -93,7 +93,7 @@
 <div class="main">
 <div class="global-styles w-embed">
 <style>
-     /* Make text look crisper and more legible in all browsers */
+     
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -101,56 +101,39 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Focus state style for keyboard navigation for the focusable elements */
+
 *[tabindex]:focus-visible,
   input[type="file"]:focus-visible {
    outline: 0.125rem solid #4d65ff;
    outline-offset: 0.125rem;
 }
 
-/* Set color style to inherit */
+
 .inherit-color * {
     color: inherit;
 }
 
-/* Get rid of top margin on first element in any rich text element */
+
 .w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
   margin-top: 0 !important;
 }
 
-/* Get rid of bottom margin on last element in any rich text element */
+
 .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
 	margin-bottom: 0 !important;
 }
 
 
-/* Make sure containers never lose their center alignment */
+
 .container-medium,.container-small, .container-large {
 	margin-right: auto !important;
   margin-left: auto !important;
 }
 
-/* 
-Make the following elements inherit typography styles from the parent and not have hardcoded values. 
-Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
-Uncomment this CSS to use it in the project. Leave this message for future hand-off.
-*/
-/*
-a,
-.w-input,
-.w-select,
-.w-tab-link,
-.w-nav-link,
-.w-dropdown-btn,
-.w-dropdown-toggle,
-.w-dropdown-link {
-  color: inherit;
-  text-decoration: inherit;
-  font-size: inherit;
-}
-*/
 
-/* Apply "..." after 3 lines of text */
+
+
+
 .text-style-3lines {
 	display: -webkit-box;
 	overflow: hidden;
@@ -158,7 +141,7 @@ a,
 	-webkit-box-orient: vertical;
 }
 
-/* Apply "..." after 2 lines of text */
+
 .text-style-2lines {
 	display: -webkit-box;
 	overflow: hidden;
@@ -166,7 +149,7 @@ a,
 	-webkit-box-orient: vertical;
 }
 
-/* These classes are never overwritten */
+
 .hide {
   display: none !important;
 }
@@ -552,7 +535,7 @@ margin: 0rem !important;
 <div class="w-embed w-iframe w-script">
 <style>
              .vimeo-container-investment-simulator-doc {
-        padding-top: 62.14%; /* Specific style for this video */
+        padding-top: 62.14%; 
     }
             </style>
 <div class="vimeo-container vimeo-container-investment-simulator-doc" id="998179992">
@@ -573,7 +556,7 @@ margin: 0rem !important;
 <div class="w-embed w-iframe w-script">
 <style>
              .vimeo-container-openbank-funds-graph {
-        padding-top: 62.54%; /* Specific style for this video */
+        padding-top: 62.54%; 
     }
             </style>
 <div class="vimeo-container vimeo-container-openbank-funds-graph" id="998204271">
@@ -594,7 +577,7 @@ margin: 0rem !important;
 <div class="w-embed w-iframe w-script">
 <style>
              .vimeo-container-search-form-component {
-        padding-top: 65.41%; /* Specific style for this video */
+        padding-top: 65.41%; 
     }
             </style>
 <div class="vimeo-container vimeo-container-search-form-component" id="998242497">
@@ -953,7 +936,6 @@ margin: 0rem !important;
       disableOnInteraction: false,
       pauseOnMouseEnter: false,
     },
-    // Propiedades de accesibilidad
     a11y: {
       prevSlideMessage: 'Previous project',
       nextSlideMessage: 'Next project',
@@ -969,7 +951,6 @@ margin: 0rem !important;
     },
   });
 
-  // Pausar el autoplay cuando se enfoca en el carrusel
   const swiperContainer = document.querySelector('.carousel.swiper-container');
   swiperContainer.addEventListener('focusin', () => {
     swiper.autoplay.stop();
@@ -978,7 +959,6 @@ margin: 0rem !important;
     swiper.autoplay.start();
   });
 
-  // Añadir atributos ARIA al contenedor del Swiper
   swiperContainer.setAttribute('aria-label', 'Proyectos de Luis Perez');
   swiperContainer.setAttribute('role', 'region');
 });
@@ -1056,7 +1036,7 @@ margin: 0rem !important;
 </footer>
 </main>
 </div>
-<script crossorigin="anonymous" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" src="/assets/js/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript">
+<script src="/assets/js/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript">
 </script>
 <script src="/assets/js/webflow.d916d519d.js" type="text/javascript">
 </script>

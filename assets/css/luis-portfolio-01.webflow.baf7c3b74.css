@@ -6042,3 +6042,5 @@ figcaption {
     grid-area: Area-14;
   }
 }
+
+a.w-webflow-badge {   display: none !important; }
