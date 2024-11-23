@@ -864,7 +864,6 @@ figcaption {
 .button {
   border-style: solid;
   border-width: 1px;
-  border-top-color: var(--background-color--seperator);
   color: #fff;
   text-align: center;
   background-color: #0000;
