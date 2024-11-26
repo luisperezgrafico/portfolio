@@ -1,12 +1,11 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Fri Nov 22 2024 19:43:04 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="66b4b42773fcdb5fec01f2aa" data-wf-site="666442ad532fbc42e5295b99">
+<!DOCTYPE html><!--  Last Published: Tue Nov 26 2024 11:22:41 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="66b4b42773fcdb5fec01f2aa" data-wf-site="666442ad532fbc42e5295b99" lang="en">
 <head>
   <meta charset="utf-8">
   <title>Luis Portfolio - Openbank</title>
   <meta content="Luis Portfolio - Openbank" property="og:title">
   <meta content="Luis Portfolio - Openbank" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../css/webflow.css" rel="stylesheet" type="text/css">
   <link href="../css/luis-portfolio-01.webflow.css" rel="stylesheet" type="text/css">
@@ -240,6 +239,14 @@ margin: 0rem !important;
             border-radius: 10px;
         }
     }
+/* Carousel hover behaviour*/
+.carousel-seat .project-overlay {
+  opacity: 0;
+  transition: opacity 0.22s ease;
+}
+.carousel-seat:hover .project-overlay {
+  opacity: 1;
+}
 </style>
     </div>
     <div class="header-s">
@@ -278,7 +285,7 @@ margin: 0rem !important;
       <section id="home-projects" data-section-name="projects" data-w-id="7d1e0fa3-02df-81fc-009a-55035a982e68" class="hp-hero-s">
         <div class="padding-global">
           <div class="container-large">
-            <div class="padding-medium project-description"></div>
+            <div class="padding-small"></div>
             <div class="w-layout-grid project-header-grid">
               <div></div>
               <div id="w-node-_7d1e0fa3-02df-81fc-009a-55035a982e6e-5a982e68"></div>
