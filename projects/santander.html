@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Tue Nov 26 2024 11:22:41 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Tue Nov 26 2024 18:59:53 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="66b379240d99a6814c6457e7" data-wf-site="666442ad532fbc42e5295b99" lang="en">
 <head>
   <meta charset="utf-8">
@@ -179,21 +179,6 @@ margin: 0rem !important;
     margin: unset !important;
     padding: unset !important;
 }
-.carousel-container {
-  opacity: 0; 
-  animation: aparecer 1s ease-in forwards; 
-}
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.90; 
-  }
-}
 /* Vimeo player styles */
     .vimeo-container,
     .video-container {
@@ -242,10 +227,25 @@ margin: 0rem !important;
 /* Carousel hover behaviour*/
 .carousel-seat .project-overlay {
   opacity: 0;
-  transition: opacity 0.22s ease;
+  transition: opacity;
 }
 .carousel-seat:hover .project-overlay {
   opacity: 1;
+}
+.carousel-container {
+  opacity: 0; 
+  animation: aparecer 1s ease-in forwards; 
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.90; 
+  }
 }
 </style>
     </div>
@@ -568,160 +568,26 @@ margin: 0rem !important;
           <div class="spacing-xl"></div>
         </div>
         <div class="spacing-l">
-          <div class="carousel-container">
-            <div class="carousel swiper-container">
-              <div class="swiper-wrapper">
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/contiki.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Contiki Holidays</div>
-                          <div class="card-project-title">Retail / Agents website</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">UI/UX Design, Component Guidelines, Design System</div>
-                        </div>
-                      </div><img loading="lazy" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/contiki_card.jpg" loading="lazy" srcset="../images/contiki_card-p-500.jpg 500w, ../images/contiki_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/santander.html" aria-current="page" class="project-overlay w-inline-block w--current">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Santander Bank</div>
-                          <div class="card-project-title">Globile App</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Mobile App, Design System, UI/UX.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/santander_card.jpg" loading="lazy" srcset="../images/santander_card-p-500.jpg 500w, ../images/santander_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/openbank.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Openbank</div>
-                          <div class="card-project-title">Wealth components</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Component Guidelines, Design System, UI/UX.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/openbank_card.jpg" loading="lazy" srcset="../images/openbank_card-p-500.jpg 500w, ../images/openbank_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/caixabank.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">CaixaBank</div>
-                          <div class="card-project-title">Omnia 2 components</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Accessibility Analysis, JAWS, NVDA, Voiceover Testing, WCGA 2.1 compliance.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/caixabank_card.jpg" loading="lazy" srcset="../images/caixabank_card-p-500.jpg 500w, ../images/caixabank_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/fahrrad-xxl.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Fahrrad XXL</div>
-                          <div class="card-project-title">Homepage / HR career portal</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">UI/UX Design</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/fahrrad_card.jpg" loading="lazy" srcset="../images/fahrrad_card-p-500.jpg 500w, ../images/fahrrad_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/contiki.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Contiki Holidays</div>
-                          <div class="card-project-title">Retail / Agents website</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">UI/UX Design, Component Guidelines, Design System</div>
-                        </div>
-                      </div><img loading="lazy" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/contiki_card.jpg" loading="lazy" srcset="../images/contiki_card-p-500.jpg 500w, ../images/contiki_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/santander.html" aria-current="page" class="project-overlay w-inline-block w--current">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Santander Bank</div>
-                          <div class="card-project-title">Globile App</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Mobile App, Design System, UI/UX.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/santander_card.jpg" loading="lazy" srcset="../images/santander_card-p-500.jpg 500w, ../images/santander_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/openbank.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Openbank</div>
-                          <div class="card-project-title">Wealth components</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Component Guidelines, Design System, UI/UX.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/openbank_card.jpg" loading="lazy" srcset="../images/openbank_card-p-500.jpg 500w, ../images/openbank_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/caixabank.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">CaixaBank</div>
-                          <div class="card-project-title">Omnia 2 components</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Accessibility Analysis, JAWS, NVDA, Voiceover Testing, WCGA 2.1 compliance.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/caixabank_card.jpg" loading="lazy" srcset="../images/caixabank_card-p-500.jpg 500w, ../images/caixabank_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="../projects/fahrrad-xxl.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Fahrrad XXL</div>
-                          <div class="card-project-title">Homepage / HR career portal</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">UI/UX Design</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="../images/fahrrad_card.jpg" loading="lazy" srcset="../images/fahrrad_card-p-500.jpg 500w, ../images/fahrrad_card.jpg 780w" class="carousel-img">
-                </div>
+          <div class="swiper-carousel carousel-container w-dyn-list">
+            <div role="list" class="carousel swiper-wrapper w-dyn-items">
+              <div role="listitem" class="carousel-seat swiper-slide w-dyn-item">
+                <a href="#" class="project-overlay w-inline-block">
+                  <div class="overlay-wrapper">
+                    <div class="overlay-content">
+                      <div class="overlay-title">
+                        <div class="card-project-client w-dyn-bind-empty"></div>
+                        <div class="card-project-title w-dyn-bind-empty"></div>
+                      </div>
+                      <div class="overlay-description">
+                        <div class="card-project-description w-dyn-bind-empty"></div>
+                      </div>
+                    </div><img loading="lazy" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" class="overlay-arrow">
+                  </div>
+                </a><img width="390" loading="lazy" alt="" src="../images/contiki_card.jpg" class="carousel-img w-dyn-bind-empty">
               </div>
+            </div>
+            <div class="w-dyn-empty">
+              <div>No items found.</div>
             </div>
           </div>
         </div>

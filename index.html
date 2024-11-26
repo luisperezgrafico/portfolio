@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Tue Nov 26 2024 11:22:41 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Tue Nov 26 2024 18:59:53 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="666442ad532fbc42e5295bd7" data-wf-site="666442ad532fbc42e5295b99" lang="en">
 <head>
   <meta charset="utf-8">
@@ -195,21 +195,6 @@ margin: 0rem !important;
     margin: unset !important;
     padding: unset !important;
 }
-.carousel-container {
-  opacity: 0; 
-  animation: aparecer 1s ease-in forwards; 
-}
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.90; 
-  }
-}
 /* Vimeo player styles */
     .vimeo-container,
     .video-container {
@@ -263,6 +248,21 @@ margin: 0rem !important;
 .carousel-seat:hover .project-overlay {
   opacity: 1;
 }
+.carousel-container {
+  opacity: 0; 
+  animation: aparecer 1s ease-in forwards; 
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.90; 
+  }
+}
 </style>
   </div>
   <div class="style w-embed">
@@ -311,6 +311,18 @@ Global Logo/Footer strip animation CSS
 main {
   background-image: radial-gradient(circle farthest-corner at 50% 100%, #242941, var(--background-color--home-background) 58%);
 }
+/* Transicion de Hero*/
+  .hero-layout-horizontal {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fadeIn 1s forwards;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 </style>
   </div>
   <div class="hp-background"></div>
@@ -411,165 +423,31 @@ main {
             </div>
             <a id="w-node-b502f746-1418-5632-f1a1-59a66b61244a-e5295bd7" href="#skills" class="arrow-buttton-home nav-item w-inline-block"><img src="images/Icons_arrow.svg" loading="lazy" width="42" alt="Scroll to main section" class="icon_arrow"></a>
           </div>
-          <div class="carousel-container">
-            <div class="carousel swiper-container">
-              <div class="swiper-wrapper">
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/contiki.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Contiki Holidays</div>
-                          <div class="card-project-title">Retail / Agents website</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">UI/UX Design, Component Guidelines, Design System</div>
-                        </div>
-                      </div><img loading="lazy" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/contiki_card.jpg" loading="lazy" srcset="images/contiki_card-p-500.jpg 500w, images/contiki_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/santander.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Santander Bank</div>
-                          <div class="card-project-title">Globile App</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Mobile App, Design System, UI/UX.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/santander_card.jpg" loading="lazy" srcset="images/santander_card-p-500.jpg 500w, images/santander_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/openbank.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Openbank</div>
-                          <div class="card-project-title">Wealth components</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Component Guidelines, Design System, UI/UX.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/openbank_card.jpg" loading="lazy" srcset="images/openbank_card-p-500.jpg 500w, images/openbank_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/caixabank.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">CaixaBank</div>
-                          <div class="card-project-title">Omnia 2 components</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Accessibility Analysis, JAWS, NVDA, Voiceover Testing, WCGA 2.1 compliance.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/caixabank_card.jpg" loading="lazy" srcset="images/caixabank_card-p-500.jpg 500w, images/caixabank_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/fahrrad-xxl.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Fahrrad XXL</div>
-                          <div class="card-project-title">Homepage / HR career portal</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">UI/UX Design</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/fahrrad_card.jpg" loading="lazy" srcset="images/fahrrad_card-p-500.jpg 500w, images/fahrrad_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/contiki.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Contiki Holidays</div>
-                          <div class="card-project-title">Retail / Agents website</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">UI/UX Design, Component Guidelines, Design System</div>
-                        </div>
-                      </div><img loading="lazy" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/contiki_card.jpg" loading="lazy" srcset="images/contiki_card-p-500.jpg 500w, images/contiki_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/santander.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Santander Bank</div>
-                          <div class="card-project-title">Globile App</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Mobile App, Design System, UI/UX.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/santander_card.jpg" loading="lazy" srcset="images/santander_card-p-500.jpg 500w, images/santander_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/openbank.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Openbank</div>
-                          <div class="card-project-title">Wealth components</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Component Guidelines, Design System, UI/UX.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/openbank_card.jpg" loading="lazy" srcset="images/openbank_card-p-500.jpg 500w, images/openbank_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/caixabank.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">CaixaBank</div>
-                          <div class="card-project-title">Omnia 2 components</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">Accessibility Analysis, JAWS, NVDA, Voiceover Testing, WCGA 2.1 compliance.</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/caixabank_card.jpg" loading="lazy" srcset="images/caixabank_card-p-500.jpg 500w, images/caixabank_card.jpg 780w" class="carousel-img">
-                </div>
-                <div class="carousel-seat swiper-slide">
-                  <a href="projects/fahrrad-xxl.html" class="project-overlay w-inline-block">
-                    <div class="overlay-wrapper">
-                      <div class="overlay-content">
-                        <div class="overlay-title">
-                          <div class="card-project-client">Fahrrad XXL</div>
-                          <div class="card-project-title">Homepage / HR career portal</div>
-                        </div>
-                        <div class="overlay-description">
-                          <div class="card-project-description">UI/UX Design</div>
-                        </div>
-                      </div><img width="34" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" loading="lazy" class="overlay-arrow">
-                    </div>
-                  </a><img width="390" sizes="(max-width: 479px) 236.6875px, (max-width: 767px) 204.40625px, (max-width: 991px) 247.4375px, (max-width: 1919px) 290.46875px, 301.234375px" alt="" src="images/fahrrad_card.jpg" loading="lazy" srcset="images/fahrrad_card-p-500.jpg 500w, images/fahrrad_card.jpg 780w" class="carousel-img">
-                </div>
+          <div class="swiper-carousel carousel-container w-dyn-list">
+            <div role="list" class="carousel swiper-wrapper w-dyn-items">
+              <div role="listitem" class="carousel-seat swiper-slide w-dyn-item">
+                <a href="#" class="project-overlay w-inline-block">
+                  <div class="overlay-wrapper">
+                    <div class="overlay-content">
+                      <div class="overlay-title">
+                        <div class="card-project-client w-dyn-bind-empty"></div>
+                        <div class="card-project-title w-dyn-bind-empty"></div>
+                      </div>
+                      <div class="overlay-description">
+                        <div class="card-project-description w-dyn-bind-empty"></div>
+                      </div>
+                    </div><img loading="lazy" height="29.000001907348633" alt="" src="https://uploads-ssl.webflow.com/65e060c1eb27f092714b7d4d/66981991e71aecc5a626098f_Vectors-Wrapper.svg" class="overlay-arrow">
+                  </div>
+                </a><img width="390" loading="lazy" alt="" src="images/contiki_card.jpg" class="carousel-img w-dyn-bind-empty">
               </div>
+            </div>
+            <div class="w-dyn-empty">
+              <div>No items found.</div>
             </div>
           </div>
           <div class="hp-hero-logostrip-c">
-            <div class="w-layout-hflex hp-hero-logos-c animate-strip"><img width="200" loading="lazy" alt="Santander" src="images/santander-logo.png" class="hp-hero-logo"><img width="203" loading="lazy" alt="Openbank" src="images/openbank-logo.png" class="hp-hero-logo"><img width="200" loading="lazy" alt="Caixabank" src="images/caixabank-logo.png" class="hp-hero-logo"><img width="120" loading="lazy" alt="Contiki" src="images/contiki-logo.png" class="hp-hero-logo is-small"><img width="230" sizes="(max-width: 479px) 184px, 230px" alt="TalentoMobile" src="images/talento-logo.png" loading="lazy" srcset="images/talento-logo-p-500.png 500w, images/talento-logo.png 588w" class="hp-hero-logo"><img width="130" loading="lazy" alt="Coforge" src="images/coforge-logo.png" class="hp-hero-logo"><img width="186" sizes="(max-width: 479px) 148.800048828125px, 186px" alt="Code Mettle" src="images/codemettle-logo.png" loading="lazy" srcset="images/codemettle-logo-p-500.png 500w, images/codemettle-logo.png 542w" class="hp-hero-logo"><img width="150" loading="lazy" alt="Cintep" src="images/cintep-logo.png" class="hp-hero-logo"><img width="75" loading="lazy" alt="Africa Point" src="images/africapoint-logo.png" class="hp-hero-logo"><img width="135" loading="lazy" alt="Coliban Water" src="images/coliban-logo.png" class="hp-hero-logo"><img width="160" loading="lazy" alt="FahrradXXL" src="images/fahrrad-logo.png" class="hp-hero-logo"><img width="95" loading="lazy" alt="Visiolink" src="images/visionlink-logo.webp" class="hp-hero-logo"><img width="180" loading="lazy" alt="Dimodelo" src="images/dimodelo-logo.png" class="hp-hero-logo"><img width="190" sizes="(max-width: 479px) 137.22509765625px, 171.53125px" alt="Allcop Store" src="images/allcopstore-logo.png" loading="lazy" srcset="images/allcopstore-logo-p-500.png 500w, images/allcopstore-logo.png 508w" class="hp-hero-logo"><img width="250" sizes="(max-width: 479px) 180.5625px, 225.703125px" alt="Embassy of Italy" src="images/italy-embassy-logo.png" loading="lazy" srcset="images/italy-embassy-logo-p-500.png 500w, images/italy-embassy-logo.png 748w" class="hp-hero-logo"></div>
-            <div class="w-layout-hflex hp-hero-logos-c animate-strip"><img width="190" loading="lazy" alt="Santander" src="images/santander-logo.png" class="hp-hero-logo"><img width="190" loading="lazy" alt="Openbank" src="images/openbank-logo.png" class="hp-hero-logo"><img width="200" loading="lazy" alt="Caixabank" src="images/caixabank-logo.png" class="hp-hero-logo"><img width="131" loading="lazy" alt="Contiki" src="images/contiki-logo.png" class="hp-hero-logo is-small"><img width="285" sizes="(max-width: 479px) 228px, 285px" alt="TalentoMobile" src="images/talento-logo.png" loading="lazy" srcset="images/talento-logo-p-500.png 500w, images/talento-logo.png 588w" class="hp-hero-logo"><img width="149" loading="lazy" alt="Coforge" src="images/coforge-logo.png" class="hp-hero-logo"><img width="186" sizes="(max-width: 479px) 148.7998046875px, 186px" alt="Code Mettle" src="images/codemettle-logo.png" loading="lazy" srcset="images/codemettle-logo-p-500.png 500w, images/codemettle-logo.png 542w" class="hp-hero-logo"><img width="156" loading="lazy" alt="Cintep" src="images/cintep-logo.png" class="hp-hero-logo"><img width="82" loading="lazy" alt="Africa Point" src="images/africapoint-logo.png" class="hp-hero-logo"><img width="159" loading="lazy" alt="Coliban Water" src="images/coliban-logo.png" class="hp-hero-logo"><img width="165" loading="lazy" alt="FahrradXXL" src="images/fahrrad-logo.png" class="hp-hero-logo"><img width="103" loading="lazy" alt="Visiolink" src="images/visionlink-logo.webp" class="hp-hero-logo"><img width="192" loading="lazy" alt="Dimodelo" src="images/dimodelo-logo.png" class="hp-hero-logo"><img width="199" sizes="(max-width: 479px) 143.537109375px, 179.421875px" alt="Allcop Store" src="images/allcopstore-logo.png" loading="lazy" srcset="images/allcopstore-logo-p-500.png 500w, images/allcopstore-logo.png 508w" class="hp-hero-logo"><img width="276" sizes="(max-width: 479px) 199.087890625px, 248.859375px" alt="Embassy of Italy" src="images/italy-embassy-logo.png" loading="lazy" srcset="images/italy-embassy-logo-p-500.png 500w, images/italy-embassy-logo.png 748w" class="hp-hero-logo"></div>
+            <div class="w-layout-hflex hp-hero-logos-c animate-strip"><img width="200" loading="lazy" alt="Santander" src="images/santander-logo.png" class="hp-hero-logo"><img width="203" loading="lazy" alt="Openbank" src="images/openbank-logo.png" class="hp-hero-logo"><img width="200" loading="lazy" alt="Caixabank" src="images/caixabank-logo.png" class="hp-hero-logo"><img width="120" loading="lazy" alt="Contiki" src="images/contiki-logo.png" class="hp-hero-logo is-small"><img width="230" sizes="(max-width: 479px) 184px, 230px" alt="TalentoMobile" src="images/talento-logo.png" loading="lazy" srcset="images/talento-logo-p-500.png 500w, images/talento-logo.png 588w" class="hp-hero-logo"><img width="130" loading="lazy" alt="Coforge" src="images/coforge-logo.png" class="hp-hero-logo"><img width="186" sizes="(max-width: 479px) 148.800048828125px, 186px" alt="Code Mettle" src="images/codemettle-logo.png" loading="lazy" srcset="images/codemettle-logo-p-500.png 500w, images/codemettle-logo.png 542w" class="hp-hero-logo"><img width="150" loading="lazy" alt="Cintep" src="images/cintep-logo.png" class="hp-hero-logo"><img width="75" loading="lazy" alt="Africa Point" src="images/africapoint-logo.png" class="hp-hero-logo"><img width="135" loading="lazy" alt="Coliban Water" src="images/coliban-logo.png" class="hp-hero-logo"><img width="160" loading="lazy" alt="FahrradXXL" src="images/fahrrad-logo.png" class="hp-hero-logo"><img width="95" loading="lazy" alt="Visiolink" src="images/visionlink-logo.webp" class="hp-hero-logo"><img width="180" loading="lazy" alt="Dimodelo" src="images/dimodelo-logo.png" class="hp-hero-logo"><img width="190" sizes="(max-width: 479px) 152px, 190px" alt="Allcop Store" src="images/allcopstore-logo.png" loading="lazy" srcset="images/allcopstore-logo-p-500.png 500w, images/allcopstore-logo.png 508w" class="hp-hero-logo"><img width="250" sizes="(max-width: 479px) 200px, 250px" alt="Embassy of Italy" src="images/italy-embassy-logo.png" loading="lazy" srcset="images/italy-embassy-logo-p-500.png 500w, images/italy-embassy-logo.png 748w" class="hp-hero-logo"></div>
+            <div class="w-layout-hflex hp-hero-logos-c animate-strip"><img width="190" loading="lazy" alt="Santander" src="images/santander-logo.png" class="hp-hero-logo"><img width="190" loading="lazy" alt="Openbank" src="images/openbank-logo.png" class="hp-hero-logo"><img width="200" loading="lazy" alt="Caixabank" src="images/caixabank-logo.png" class="hp-hero-logo"><img width="131" loading="lazy" alt="Contiki" src="images/contiki-logo.png" class="hp-hero-logo is-small"><img width="285" sizes="(max-width: 479px) 228px, 285px" alt="TalentoMobile" src="images/talento-logo.png" loading="lazy" srcset="images/talento-logo-p-500.png 500w, images/talento-logo.png 588w" class="hp-hero-logo"><img width="149" loading="lazy" alt="Coforge" src="images/coforge-logo.png" class="hp-hero-logo"><img width="186" sizes="(max-width: 479px) 148.7998046875px, 186px" alt="Code Mettle" src="images/codemettle-logo.png" loading="lazy" srcset="images/codemettle-logo-p-500.png 500w, images/codemettle-logo.png 542w" class="hp-hero-logo"><img width="156" loading="lazy" alt="Cintep" src="images/cintep-logo.png" class="hp-hero-logo"><img width="82" loading="lazy" alt="Africa Point" src="images/africapoint-logo.png" class="hp-hero-logo"><img width="159" loading="lazy" alt="Coliban Water" src="images/coliban-logo.png" class="hp-hero-logo"><img width="165" loading="lazy" alt="FahrradXXL" src="images/fahrrad-logo.png" class="hp-hero-logo"><img width="103" loading="lazy" alt="Visiolink" src="images/visionlink-logo.webp" class="hp-hero-logo"><img width="192" loading="lazy" alt="Dimodelo" src="images/dimodelo-logo.png" class="hp-hero-logo"><img width="199" sizes="(max-width: 479px) 159.19970703125px, 199px" alt="Allcop Store" src="images/allcopstore-logo.png" loading="lazy" srcset="images/allcopstore-logo-p-500.png 500w, images/allcopstore-logo.png 508w" class="hp-hero-logo"><img width="276" sizes="(max-width: 479px) 220.80029296875px, 276px" alt="Embassy of Italy" src="images/italy-embassy-logo.png" loading="lazy" srcset="images/italy-embassy-logo-p-500.png 500w, images/italy-embassy-logo.png 748w" class="hp-hero-logo"></div>
           </div>
         </div>
       </div>
@@ -601,7 +479,7 @@ main {
                 <div class="hp-progress-bar-bg"></div>
               </div>
             </div>
-            <div class="hp-skills-img-w img-1"><img src="images/ui-ux.webp" loading="lazy" style="opacity:0" data-w-id="25818fb2-49ea-3fa5-3951-ffe984a51f67" alt="A mobile UI/UX interface design" class="skills-gd-img"></div>
+            <div class="hp-skills-img-w img-1"><img src="images/ui-ux.webp" loading="lazy" alt="A mobile UI/UX interface design" class="skills-gd-img"></div>
           </div>
           <div id="skills-2" class="hp-skills-w">
             <div class="hp-skills-content-w skill-2-content">
