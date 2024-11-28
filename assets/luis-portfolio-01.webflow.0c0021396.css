@@ -2083,11 +2083,11 @@ textarea.w-input, textarea.w-select {
   --margin-l: 8rem;
   --home-stroke: #4c5269;
   --margin-xs: 2rem;
+  --margin-s: 4rem;
   --overlay: #141518f7;
   --title-underline: 8rem;
   --mobile-radius: 10px;
   --margin-m: 6rem;
-  --margin-s: 4rem;
   --margin-lotties: -3rem;
   --hp-stroke: #4c5269;
   --font-family: "Instrument Sans", sans-serif;
@@ -3393,15 +3393,7 @@ figcaption {
   position: relative;
 }
 
-.icon_social:hover {
-  mix-blend-mode: screen;
-}
-
-.icon_social.light-mode {
-  background-color: #0000;
-}
-
-.icon_social.light-mode:hover {
+.icon_social.project:hover {
   opacity: .8;
 }
 
@@ -3412,6 +3404,10 @@ figcaption {
   align-items: center;
   padding: .6rem 1rem;
   display: flex;
+}
+
+.header-right.project {
+  background-image: none;
 }
 
 .hp-skills-s {
@@ -3593,7 +3589,7 @@ figcaption {
 
 .hp-projects-s {
   padding-top: 5.6rem;
-  padding-bottom: var(--margin-l);
+  padding-bottom: var(--margin-s);
 }
 
 .hp-projects-s.bg-home-background.scroll-snap {
@@ -4144,8 +4140,6 @@ figcaption {
 .footer-nav {
   justify-content: space-between;
   align-items: stretch;
-  padding-left: 4rem;
-  padding-right: 4rem;
   display: flex;
 }
 
@@ -4199,10 +4193,12 @@ figcaption {
 }
 
 .footer-menu {
+  flex: none;
   justify-content: center;
   align-self: center;
   align-items: stretch;
   display: flex;
+  position: relative;
 }
 
 .top-scroll {
@@ -4371,6 +4367,13 @@ figcaption {
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   flex-flow: column;
+  display: flex;
+}
+
+.footer-arrow {
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 16rem;
   display: flex;
 }
 
@@ -5417,8 +5420,9 @@ figcaption {
     padding-left: 2rem;
   }
 
-  .arrow-buttton-footer {
-    margin-right: -30px;
+  .footer-nav {
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .tabs-container.contiki {
@@ -5502,6 +5506,10 @@ figcaption {
 
   .is-portfolio {
     height: 28rem;
+  }
+
+  .footer-arrow {
+    width: auto;
   }
 
   ._3-video-layout {
@@ -6205,6 +6213,10 @@ figcaption {
   .lottie-button {
     -webkit-user-select: none;
     user-select: none;
+  }
+
+  .hp-hero-logostrip-c {
+    display: none;
   }
 
   .hp-hero-logos-c.animate-strip {
