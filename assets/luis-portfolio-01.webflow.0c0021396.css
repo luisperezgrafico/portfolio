@@ -4615,7 +4615,7 @@ figcaption {
   opacity: .5;
   justify-content: flex-start;
   align-items: center;
-  display: flex;
+  display: none;
   position: absolute;
   inset: auto 0% 16px;
   overflow: hidden;
