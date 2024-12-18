@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+
+<html data-wf-domain="luis-portfolio-01.webflow.io" data-wf-page="666442ad532fbc42e5295bd7" data-wf-site="666442ad532fbc42e5295b99" lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>
+   Luis Portflio
+  </title>
+<meta content="Luis Portflio" property="og:title"/>
+<meta content="Luis Portflio" property="twitter:title"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="/assets/luis-portfolio-01.webflow.09ddaac42.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/fonts.googleapis.com" rel="preconnect"/>
+<link href="/assets/fonts.gstatic.com" rel="preconnect"/>
+<script src="/assets/webfont.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+   WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Instrument Sans:regular,500,600,700,italic,500italic,600italic,700italic","Instrument Serif:regular,italic"]  }});
+  </script>
+<script type="text/javascript">
+   !function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);
+  </script>
+<link href="/assets/66a0c2c92c500c332b80472f_favicon.jpg" rel="shortcut icon" type="image/x-icon"/>
+<link href="/assets/66a0c2cd679d4ccc0e56d9eb_webclip.jpg" rel="apple-touch-icon"/>
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash;
+
+    if (hash) {
+        const noHashURL = window.location.href.replace(/#.*$/, "");
+        window.history.replaceState("", document.title, noHashURL);
+
+        setTimeout(() => {
+            const targetElement = document.querySelector(hash);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+            window.history.replaceState("", document.title, noHashURL + hash);
+        }, 1000);
+    }
+});
+  </script>
+<style>
+   
+
+
+.nav-item .nav-name {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.nav-item.w--current .nav-name {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.nav-item .nav-line {
+    width: 1.75rem;
+    stroke-width: 1;
+    background-color: #b3b3b3;
+    transition: width 0.3s ease, stroke-width 0.3s ease;
+}
+
+
+.nav-item.w--current .nav-line {
+    width: 3.25rem; 
+    stroke-width: 2;
+}
+
+
+
+
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 4rem));
+    }
+  }
+
+  .animate-strip{
+    animation: scroll 120s linear infinite;
+  }
+
+
+
+  .hero-layout-horizontal {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  </style>
+</head>
+<body>
+<div class="global-styles w-embed">
+<style>
+    
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+
+.inherit-color * {
+    color: inherit;
+}
+
+
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+
+
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+
+
+
+
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+
+.animaiton-container .main{
+    width: unset !important; 
+    height: unset !important;
+    display: unset !important;
+    margin: unset !important;
+    padding: unset !important;
+}
+
+
+
+
+    .vimeo-container,
+    .video-container {
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .vimeo-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        border-radius: 15px;
+    }
+    .vimeo-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(28, 29, 33, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    .vimeo-overlay img {
+        width: 64px;
+        height: 64px;
+    }
+    .hidden {
+        display: none;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .vimeo-container,
+        .video-container,
+        .vimeo-player,
+        .vimeo-overlay {
+            border-radius: 10px;
+        }
+    }
+    
+    
+
+
+.carousel-seat .project-overlay {
+  opacity: 0;
+  transition: opacity;
+}
+
+.carousel-seat:hover .project-overlay {
+  opacity: 1;
+}
+
+.carousel-container {
+  opacity: 0; 
+  animation: aparecer 1s ease-in forwards; 
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.90; 
+  }
+}
+   </style>
+</div>
+<header class="header-s">
+<div class="global_navbar w-nav" data-animation="default" data-collapse="none" data-duration="400" data-easing="ease" data-easing2="ease" data-wf--global-navbar--variant="base" id="navbar" role="banner">
+<div class="container-large padding-global project-navbar">
+<div class="nav-container">
+<nav class="header-left w-nav-menu" role="navigation">
+<a aria-current="page" aria-label="Go to Homepage" class="brand w-nav-brand w--current" href="/">
+<div class="logo home w-embed">
+<svg fill="CurrentColor" height="32" style="display: block;" viewbox="0 0 30 34" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.21622 2.43243L5.27027 0V22.2973H16.6216L19.4595 26.3514H0L1.21622 23.9189V2.43243Z">
+</path>
+<path d="M7.29736 20.2704V16.2163L13.7839 5.67578L30.0001 30.0001L27.1622 33.2433L13.7839 14.1893L9.7298 20.2704H7.29736Z">
+</path>
+</svg>
+</div>
+</a>
+<div class="header-text">
+        Luis Perez
+       </div>
+<div class="p header-line">
+        |
+       </div>
+<div class="header-text header-title">
+        Product Designer &amp; Accessibility Analyst
+       </div>
+<div class="social-container">
+<a aria-label="Go to my Behance" class="social-link w-inline-block" href="https://www.behance.net/luisadrian" target="_blank">
+<img alt="Go to my Behance portfolio" class="icon_social" loading="lazy" src="/assets/669931dcecc1a82a0a4c2014_Behance.svg" width="28"/>
+</a>
+<a aria-label="Go to my Linkedin" class="social-link w-inline-block" href="https://www.linkedin.com/in/luisperezgrafico/" target="_blank">
+<img alt="Go to my Linkedin page" class="icon_social" loading="lazy" src="/assets/66993291f0d865910145e9a8_Linkedin.svg" width="28"/>
+</a>
+<a aria-label="Go to my Figma page" class="social-link w-inline-block" href="https://www.figma.com/@luisperez" target="_blank">
+<img alt="Go to my Figma profile" class="icon_social" loading="lazy" src="/assets/6699329da51131c2aec44562_Figma.svg" width="28"/>
+</a>
+<a class="social-link lottie hidden w-inline-block" href="https://lottiefiles.com/c7a9llzaa7t1mr1p" target="_blank">
+<img alt="" class="icon_social" loading="lazy" src="/assets/669932a6be591b992b45867b_Lottie.svg" width="28"/>
+</a>
+<a aria-label="Go to my CV page" class="social-link w-inline-block" href="https://www.figma.com/proto/ewZjz7SmFTKCULjRG92mmZ/Luis-Perez-CV-2024?type=design&amp;node-id=0-2&amp;t=kZHW463eAqRk5A9k-8&amp;scaling=min-zoom&amp;page-id=0%3A1&amp;starting-point-node-id=0%3A2&amp;hide-ui=1" target="_blank">
+<img alt="" class="icon_social" loading="lazy" src="/assets/669932b99cc430e89e03ab13_CV.svg" width="28"/>
+</a>
+</div>
+</nav>
+<nav class="header-right w-nav-menu" role="navigation">
+<div class="elipsis">
+</div>
+<a class="p nav-item w-nav-link" href="#contact">
+        Available for Remote Projects
+       </a>
+</nav>
+<article class="nav-layout-vertical">
+<a class="nav-item w-inline-block" href="#about">
+<div class="nav-name">
+<div class="nav-text-sans" href="#">
+          ABOUT
+         </div>
+</div>
+<div class="nav-line">
+<div class="line" id="">
+</div>
+</div>
+</a>
+<a class="nav-item w-inline-block" href="#skills">
+<div class="nav-name">
+<div class="nav-text-sans" href="#">
+          SKILLS
+         </div>
+</div>
+<div class="nav-line">
+<div class="line" id="">
+</div>
+</div>
+</a>
+<a class="nav-item w-inline-block" href="#projects">
+<div class="nav-name">
+<div class="nav-text-sans">
+          PROJECTS
+         </div>
+</div>
+<div class="nav-line">
+<div class="line" id="">
+</div>
+</div>
+</a>
+<a class="nav-item w-inline-block" href="#contact">
+<div class="nav-name">
+<div class="nav-text-sans" href="#">
+          CONTACT
+         </div>
+</div>
+<div class="nav-line">
+<div class="line" id="">
+</div>
+</div>
+</a>
+</article>
+</div>
+</div>
+</div>
+</header>
+<div class="hp-background">
+</div>
+<main class="main">
+<section class="hp-about-s" id="about">
+<div class="container-small padding-global">
+<div class="hp-about-c">
+<div class="hp-about-title" data-w-id="615c0c2f-ee80-1063-45c6-abba0843ba90" style="opacity:0">
+<h1 class="home-serif-h1">
+        Welcome, I'm Luis Perez
+       </h1>
+</div>
+<a class="hp-about-photo-c w-inline-block" data-w-id="87c3cc59-c9da-e272-22c5-1459c8844b9c" href="https://www.linkedin.com/in/luisperezgrafico/" style="opacity:0" target="_blank">
+<svg class="about-circle" fill="none" height="242" viewbox="0 0 242 242" width="242" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_1597_3913)" opacity="0.9">
+<circle cx="121" cy="121" r="119.5" stroke="url(#paint0_linear_1597_3913)" stroke-width="3">
+</circle>
+</g>
+<defs>
+<filter color-interpolation-filters="sRGB" filterunits="userSpaceOnUse" height="247.983" id="filter0_b_1597_3913" width="247.983" x="-2.99166" y="-2.99166">
+<feflood flood-opacity="0" result="BackgroundImageFix">
+</feflood>
+<fegaussianblur in="BackgroundImageFix" stddeviation="1.49583">
+</fegaussianblur>
+<fecomposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1597_3913">
+</fecomposite>
+<feblend in="SourceGraphic" in2="effect1_backgroundBlur_1597_3913" mode="normal" result="shape">
+</feblend>
+</filter>
+<lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_1597_3913" x1="140.243" x2="-2.68621" y1="1.07081e-05" y2="111.488">
+<stop stop-color="#AF98B7">
+</stop>
+<stop offset="0.107817" stop-color="#74547F">
+</stop>
+<stop offset="1" stop-color="#2B3877">
+</stop>
+</lineargradient>
+</defs>
+</svg>
+<img alt="Photo of Luis Perez - Product Designer" class="about-photo" height="Auto" loading="lazy" sizes="100vw" src="/assets/67482859c7b515779a823de0_photo.webp" srcset="https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/67482859c7b515779a823de0_photo-p-500.webp 500w, https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/67482859c7b515779a823de0_photo.webp 642w" width="214"/>
+<svg class="about-logo" fill="none" height="153" viewbox="0 0 138 153" width="138" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_1597_3926)" opacity="0.9">
+<path d="M5.59458 11.1794L24.2432 0V102.478H76.4593L89.5133 121.11H0L5.59458 109.931V11.1794Z" fill="#151617" fill-opacity="0.05">
+</path>
+<path d="M6.93599 110.602L7.09458 110.285V109.931V12.0291L22.7432 2.6481V102.478V103.978H24.2432H75.6787L86.6309 119.61H2.428L6.93599 110.602Z" stroke="url(#paint0_linear_1597_3926)" stroke-width="3">
+</path>
+</g>
+<g filter="url(#filter1_b_1597_3926)" opacity="0.9">
+<path d="M33.5678 93.1622V74.5298L63.4056 26.0857L138 137.88L124.946 152.786L63.4056 65.2137L44.7569 93.1622H33.5678Z" fill="#151617" fill-opacity="0.05">
+</path>
+<path d="M136.114 137.756L125.075 150.361L64.6328 64.3512L63.3735 62.5592L62.1578 64.3811L43.9546 91.6622H35.0678V74.9547L63.4561 28.864L136.114 137.756Z" stroke="url(#paint1_linear_1597_3926)" stroke-width="3">
+</path>
+</g>
+<defs>
+<filter color-interpolation-filters="sRGB" filterunits="userSpaceOnUse" height="127.094" id="filter0_b_1597_3926" width="95.4967" x="-2.99166" y="-2.99166">
+<feflood flood-opacity="0" result="BackgroundImageFix">
+</feflood>
+<fegaussianblur in="BackgroundImageFix" stddeviation="1.49583">
+</fegaussianblur>
+<fecomposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1597_3926">
+</fecomposite>
+<feblend in="SourceGraphic" in2="effect1_backgroundBlur_1597_3926" mode="normal" result="shape">
+</feblend>
+</filter>
+<filter color-interpolation-filters="sRGB" filterunits="userSpaceOnUse" height="132.683" id="filter1_b_1597_3926" width="110.416" x="30.5761" y="23.0941">
+<feflood flood-opacity="0" result="BackgroundImageFix">
+</feflood>
+<fegaussianblur in="BackgroundImageFix" stddeviation="1.49583">
+</fegaussianblur>
+<fecomposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1597_3926">
+</fecomposite>
+<feblend in="SourceGraphic" in2="effect1_backgroundBlur_1597_3926" mode="normal" result="shape">
+</feblend>
+</filter>
+<lineargradient gradientunits="userSpaceOnUse" id="paint0_linear_1597_3926" x1="51.8743" x2="-11.9476" y1="5.35892e-06" y2="36.7948">
+<stop offset="0.107817" stop-color="#74547F">
+</stop>
+<stop offset="1" stop-color="#2B3877">
+</stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="paint1_linear_1597_3926" x1="94.0878" x2="23.8955" y1="26.0857" y2="71.2149">
+<stop offset="0.107817" stop-color="#74547F">
+</stop>
+<stop offset="1" stop-color="#2B3877">
+</stop>
+</lineargradient>
+</defs>
+</svg>
+</a>
+<div class="hp-about-text-w" data-w-id="22fc941b-1cd8-578c-77c8-50626403749b" style="opacity:0">
+<p class="intro-p">
+        Product Designer based in Spain. I specialize in user-focused web design and creating seamless digital experiences. With over 10 years of expertise in UX/UI, I thrive on blending creativity with functionality, turning complex challenges into engaging solutions for users.
+       </p>
+</div>
+<a class="hp-about-lottie w-inline-block" href="#skills" id="lottie-arrow">
+</a>
+</div>
+</div>
+</section>
+<section class="hp-skills-s" id="skills">
+<div class="container-small padding-global">
+<div class="hp-skills-content">
+<div class="hp-section-title-w skills">
+<h1 class="home-serif-h1 text-color-primary">
+        Skills
+       </h1>
+</div>
+<div class="hp-skills-w first" id="skills-1">
+<div class="hp-skills-content-w skill-1-content">
+<div class="hp-skills-content-title-w">
+<h1>
+          UI/UX Design
+         </h1>
+</div>
+<div class="hp-skills-content-desc-w">
+<p>
+          Crafting seamless, user-centered digital experiences that captivate and engage. I design with purpose to create experiences that feel intuitive and build a strong user connection.
+         </p>
+</div>
+<div class="hp-skills-content-tags-w">
+<div class="hp-skills-content-tag">
+<div>
+           Figma
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           Principle
+          </div>
+</div>
+</div>
+<div class="hp-skills-content-progress-w">
+<div class="hp-progress-bar">
+</div>
+<div class="hp-progress-bar-bg">
+</div>
+</div>
+</div>
+<div class="hp-skills-img-w img-1">
+<img alt="A mobile UI/UX interface design" class="skills-gd-img" loading="lazy" src="/assets/673b60896677642ec22cfbf8_ui-ux.webp"/>
+</div>
+</div>
+<div class="hp-skills-w" id="skills-2">
+<div class="hp-skills-content-w skill-2-content">
+<div class="hp-skills-content-title-w">
+<h1>
+          Graphic Design
+         </h1>
+</div>
+<div class="hp-skills-content-desc-w">
+<p>
+          Creating visually engaging experiences with a foundation in design fundamentals, ensuring brand cohesion and a strong identity at every touchpoint.
+         </p>
+</div>
+<div class="hp-skills-content-tags-w">
+<div class="hp-skills-content-tag">
+<div>
+           Photoshop
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           Illustrator
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           Premier
+          </div>
+</div>
+</div>
+<div class="hp-skills-content-progress-w">
+<div class="hp-progress-bar">
+</div>
+<div class="hp-progress-bar-bg">
+</div>
+</div>
+</div>
+<div class="hp-skills-img-w img-2" id="lottie-gd">
+</div>
+</div>
+<div class="hp-skills-w" id="skills-3">
+<div class="hp-skills-content-w skill-3-content">
+<div class="hp-skills-content-title-w">
+<h1 class="heading-4">
+          Interaction Design
+         </h1>
+</div>
+<div class="hp-skills-content-desc-w">
+<p>
+          Crafting dynamic, interactive experiences that enhance the user journey, leveraging motion and behavior for seamless user experiences.
+         </p>
+</div>
+<div class="hp-skills-content-tags-w">
+<div class="hp-skills-content-tag">
+<div>
+           Lottie
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           After Effects
+          </div>
+</div>
+</div>
+<div class="hp-skills-content-progress-w">
+<div class="hp-progress-bar">
+</div>
+<div class="hp-progress-bar-bg">
+</div>
+</div>
+</div>
+<div class="hp-skills-img-w img-3">
+<div class="lottie-c" id="lottie-btn">
+</div>
+</div>
+</div>
+<div class="hp-skills-w" id="skills-4">
+<div class="hp-skills-content-w skill-4-content">
+<div class="hp-skills-content-title-w">
+<h1>
+          Accessibility
+         </h1>
+</div>
+<div class="hp-skills-content-desc-w">
+<p>
+          Conducting WCAG 2.1 compliance audits and implementing accessible design practices to make digital products usable by as many people as possible.
+         </p>
+</div>
+<div class="hp-skills-content-tags-w">
+<div class="hp-skills-content-tag">
+<div>
+           ADA compliant
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           EN 301 549 compliant
+          </div>
+</div>
+</div>
+<div class="hp-skills-content-progress-w">
+<div class="hp-progress-bar">
+</div>
+<div class="hp-progress-bar-bg">
+</div>
+</div>
+</div>
+<div class="hp-skills-img-w img-4" id="lottie-a11y">
+</div>
+</div>
+<div class="hp-skills-w last" id="skills-5">
+<div class="hp-skills-content-w skill-5-content">
+<div class="hp-skills-content-title-w">
+<h1>
+          Web Development
+         </h1>
+</div>
+<div class="hp-skills-content-desc-w">
+<p>
+          Leveraging Webflow's advanced features, I build responsive, interactive websites with dynamic CMS, custom animations, and seamless third-party integrations, delivering high-performance, SEO-optimized experiences across all devices.
+         </p>
+</div>
+<div class="hp-skills-content-tags-w">
+<div class="hp-skills-content-tag">
+<div>
+           Webflow Development
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           CMS Collections
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           SEO
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           API integrations
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           Animations
+          </div>
+</div>
+<div class="hp-skills-content-tag">
+<div>
+           HTML/CSS/JS
+          </div>
+</div>
+</div>
+<div class="hp-skills-content-progress-w">
+<div class="hp-progress-bar">
+</div>
+<div class="hp-progress-bar-bg">
+</div>
+</div>
+</div>
+<div class="hp-skills-img-w img-5" id="lottie-dev">
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="hp-projects-s" id="projects">
+<div class="container-large padding-global hero">
+<div class="hero-layout">
+<div class="hero-layout-horizontal">
+<div class="hero-title" id="w-node-_8ace21bd-a74f-7c99-445a-3bd9b78cad6c-e5295bd7">
+<h1 class="home-sans-h1" id="w-node-f99b6253-9b65-cb14-68ec-91e7b956c67e-e5295bd7">
+         Portfolio
+        </h1>
+<h1 class="home-serif-h1" id="w-node-_8e382af9-c874-3474-4009-992234ef0880-e5295bd7">
+         Showcase
+        </h1>
+</div>
+<div class="quote-slider w-slider" data-animation="cross" data-autoplay="true" data-autoplay-limit="0" data-delay="8000" data-disable-swipe="true" data-duration="3000" data-easing="ease" data-hide-arrows="false" data-infinite="true" data-nav-spacing="3" id="w-node-_5eb45e71-d565-3ac2-b514-7821033d3d5e-e5295bd7">
+<div class="mask w-slider-mask">
+<div class="quote_1 w-slide">
+<div class="quote_block">
+<blockquote class="description text-color-primary">
+            “Design is not just what it looks like and feels like. Design is how it works.”
+           </blockquote>
+<h1 class="author-serif-h6 text-color-primary">
+            - Steve Jobs
+           </h1>
+</div>
+</div>
+<div class="quote_2 w-slide">
+<div class="quote_block">
+<blockquote class="description text-color-primary">
+            "Innovation is the ability to see change as an opportunity - not a threat."
+           </blockquote>
+<h1 class="author-serif-h6 text-color-primary">
+            - Marty Neumeier
+           </h1>
+</div>
+</div>
+<div class="quote_3 w-slide">
+<div class="quote_block">
+<blockquote class="description text-color-primary">
+            “Simplicity is about subtracting the obvious and adding the meaningful.”
+           </blockquote>
+</div>
+<h1 class="author-serif-h6 text-color-primary">
+           - John Maeda
+          </h1>
+</div>
+</div>
+</div>
+<a class="arrow-buttton-home nav-item w-inline-block" href="#contact" id="w-node-b502f746-1418-5632-f1a1-59a66b61244a-e5295bd7">
+<img alt="Scroll to main section" class="icon_arrow" loading="lazy" src="/assets/666adc858d0f26a830cb4181_Icons_arrow.svg" width="42"/>
+</a>
+</div>
+<div class="swiper-carousel carousel-container w-dyn-list">
+<div class="carousel swiper-wrapper w-dyn-items" role="list">
+<div class="carousel-seat swiper-slide w-dyn-item" role="listitem">
+<a class="project-overlay w-inline-block" href="/projects/contiki.html">
+<div class="overlay-wrapper">
+<div class="overlay-content">
+<div class="overlay-title">
+<div class="card-project-client">
+              Contiki Holidays
+             </div>
+<div class="card-project-title">
+              Retail / Agents website
+             </div>
+</div>
+<div class="overlay-description">
+<div class="card-project-description">
+              UI/UX Design, Component Guidelines, Design System
+             </div>
+</div>
+</div>
+<img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
+</div>
+</a>
+<img alt="" class="carousel-img" loading="lazy" sizes="(max-width: 767px) 236.6875px, (max-width: 991px) 258.203125px, (max-width: 1919px) 279.71875px, 301.234375px" src="/assets/6745d0aaa656864293bcbb51_contiki_card.webp" srcset="https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745d0aaa656864293bcbb51_contiki_card-p-500.webp 500w, https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745d0aaa656864293bcbb51_contiki_card.webp 780w" width="390"/>
+</div>
+<div class="carousel-seat swiper-slide w-dyn-item" role="listitem">
+<a class="project-overlay w-inline-block" href="/projects/santander.html">
+<div class="overlay-wrapper">
+<div class="overlay-content">
+<div class="overlay-title">
+<div class="card-project-client">
+              Santander Bank
+             </div>
+<div class="card-project-title">
+              Globile App
+             </div>
+</div>
+<div class="overlay-description">
+<div class="card-project-description">
+              Mobile App, Design System, UI/UX.
+             </div>
+</div>
+</div>
+<img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
+</div>
+</a>
+<img alt="" class="carousel-img" loading="lazy" sizes="(max-width: 767px) 236.6875px, (max-width: 991px) 258.203125px, (max-width: 1919px) 279.71875px, 301.234375px" src="/assets/6745d0dc36c947daf62ac12a_santander_card.webp" srcset="https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745d0dc36c947daf62ac12a_santander_card-p-500.webp 500w, https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745d0dc36c947daf62ac12a_santander_card.webp 780w" width="390"/>
+</div>
+<div class="carousel-seat swiper-slide w-dyn-item" role="listitem">
+<a class="project-overlay w-inline-block" href="/projects/openbank.html">
+<div class="overlay-wrapper">
+<div class="overlay-content">
+<div class="overlay-title">
+<div class="card-project-client">
+              Openbank
+             </div>
+<div class="card-project-title">
+              Wealth components
+             </div>
+</div>
+<div class="overlay-description">
+<div class="card-project-description">
+              Component Guidelines, Design System, UI/UX.
+             </div>
+</div>
+</div>
+<img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
+</div>
+</a>
+<img alt="" class="carousel-img" loading="lazy" sizes="(max-width: 767px) 236.6875px, (max-width: 991px) 258.203125px, (max-width: 1919px) 279.71875px, 301.234375px" src="/assets/6745d0f5e152fe2dd76b54ee_openbank_card.webp" srcset="https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745d0f5e152fe2dd76b54ee_openbank_card-p-500.webp 500w, https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745d0f5e152fe2dd76b54ee_openbank_card.webp 780w" width="390"/>
+</div>
+<div class="carousel-seat swiper-slide w-dyn-item" role="listitem">
+<a class="project-overlay w-inline-block" href="/projects/fahrrad-xxl.html">
+<div class="overlay-wrapper">
+<div class="overlay-content">
+<div class="overlay-title">
+<div class="card-project-client">
+              Fahrrad XXL
+             </div>
+<div class="card-project-title">
+              Homepage / HR career portal
+             </div>
+</div>
+<div class="overlay-description">
+<div class="card-project-description">
+              UI/UX Design
+             </div>
+</div>
+</div>
+<img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
+</div>
+</a>
+<img alt="" class="carousel-img" loading="lazy" src="/assets/6745d1276cb979c43a6150a2_fahrrad_card.webp" width="390"/>
+</div>
+<div class="carousel-seat swiper-slide w-dyn-item" role="listitem">
+<a class="project-overlay w-inline-block" href="https://localyzer-green.vercel.app/">
+<div class="overlay-wrapper">
+<div class="overlay-content">
+<div class="overlay-title">
+<div class="card-project-client">
+              Localyzer
+             </div>
+<div class="card-project-title">
+              Web/CMS Development
+             </div>
+</div>
+<div class="overlay-description">
+<div class="card-project-description">
+              Webflow, Gsap, Javascript, HTML, CSS
+             </div>
+</div>
+</div>
+<img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
+</div>
+</a>
+<img alt="" class="carousel-img" loading="lazy" sizes="(max-width: 767px) 236.6875px, (max-width: 991px) 258.203125px, (max-width: 1919px) 279.71875px, 301.234375px" src="/assets/6745f6dcd0680dec738602b9_localyzer_card.webp" srcset="https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745f6dcd0680dec738602b9_localyzer_card-p-500.webp 500w, https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745f6dcd0680dec738602b9_localyzer_card.webp 780w" width="390"/>
+</div>
+<div class="carousel-seat swiper-slide w-dyn-item" role="listitem">
+<a class="project-overlay w-inline-block" href="https://adastrapad.webflow.io/">
+<div class="overlay-wrapper">
+<div class="overlay-content">
+<div class="overlay-title">
+<div class="card-project-client">
+              Adastra
+             </div>
+<div class="card-project-title">
+              Blockchain Project
+             </div>
+</div>
+<div class="overlay-description">
+<div class="card-project-description">
+              Webflow, JS, Model Viewer, Animations
+             </div>
+</div>
+</div>
+<img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
+</div>
+</a>
+<img alt="" class="carousel-img" loading="lazy" sizes="(max-width: 767px) 236.6875px, (max-width: 991px) 258.203125px, (max-width: 1919px) 279.71875px, 301.234375px" src="/assets/674603c39712697a9f1784c5_adastra_card.jpg" srcset="https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/674603c39712697a9f1784c5_adastra_card-p-500.jpg 500w, https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/674603c39712697a9f1784c5_adastra_card.jpg 780w" width="390"/>
+</div>
+<div class="carousel-seat swiper-slide w-dyn-item" role="listitem">
+<a class="project-overlay w-inline-block" href="/projects/caixabank.html">
+<div class="overlay-wrapper">
+<div class="overlay-content">
+<div class="overlay-title">
+<div class="card-project-client">
+              CaixaBank
+             </div>
+<div class="card-project-title">
+              Omnia 2 components
+             </div>
+</div>
+<div class="overlay-description">
+<div class="card-project-description">
+              Accessibility Analysis JAWS, NVDA, Voiceover Testing WCGA 2.1 compliance
+             </div>
+</div>
+</div>
+<img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
+</div>
+</a>
+<img alt="" class="carousel-img" loading="lazy" sizes="(max-width: 767px) 236.6875px, (max-width: 991px) 258.203125px, (max-width: 1919px) 279.71875px, 301.234375px" src="/assets/6745d10fed8b5149d60cd89a_caixabank_card.webp" srcset="https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745d10fed8b5149d60cd89a_caixabank_card-p-500.webp 500w, https://cdn.prod.website-files.com/666ec783dfb18d8135bb0d25/6745d10fed8b5149d60cd89a_caixabank_card.webp 780w" width="390"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="hp-contact-s" id="contact">
+<div class="container-large padding-global padding-section-medium">
+<div class="hp-section-title-w">
+<h1 class="home-serif-h1">
+       Contact
+      </h1>
+</div>
+<div class="hp-form-c">
+<div class="flex-layout-vertical allign-center margin-bottom margin-xlarge">
+<p class="text-color-primary text-align-center contact">
+        Get in touch and let's discuss your next project.
+       </p>
+</div>
+<div class="form-block w-form">
+<form class="form_content" data-name="Contact Form" data-wf-element-id="e9db748f-6780-26ca-0352-f6b19a58979d" data-wf-page-id="666442ad532fbc42e5295bd7" id="wf-form-Contact-Form" method="get" name="wf-form-Contact-Form">
+<div class="field_block">
+<label class="field_label text-color-primary m_project-sans-h3" for="name">
+          Name *
+         </label>
+<input class="field_input m_project-sans-h3 text-color-primary w-input" data-name="Name" id="name" maxlength="256" name="name" placeholder="" required="" type="text"/>
+</div>
+<div class="field_block">
+<label class="field_label text-color-primary m_project-sans-h3" for="Email">
+          Email *
+         </label>
+<input class="field_input m_project-sans-h3 text-color-primary w-input" data-name="Email" id="Email" maxlength="256" name="Email" placeholder="" required="" type="email"/>
+</div>
+<div class="field_block">
+<label class="field_label text-color-primary m_project-sans-h3" for="Phone-Number">
+          Phone Number
+         </label>
+<input class="field_input m_project-sans-h3 text-color-primary w-input" data-name="Phone Number" id="Phone-Number" maxlength="256" name="Phone-Number" placeholder="" type="tel"/>
+</div>
+<div class="field_block">
+<label class="field_label text-color-primary m_project-sans-h3" for="Message">
+          Message *
+         </label>
+<input class="field_input m_project-sans-h3 text-color-primary w-input" data-name="Message" id="Message" maxlength="1000" name="Message" placeholder="" required="" type="text"/>
+</div>
+<div class="button_block allign-center">
+<input class="button w-button" data-wait="Please wait..." type="submit" value="Get in Touch"/>
+</div>
+</form>
+<div class="success-message w-form-done">
+<div>
+         Thank you! Your submission has been received!
+        </div>
+</div>
+<div class="error-message w-form-fail">
+<div>
+         Oops! Something went wrong while submitting the form.
+        </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="hp-hero-logostrip-c">
+<div class="w-layout-hflex hp-hero-logos-c animate-strip">
+<img alt="Santander" class="hp-hero-logo" loading="lazy" src="/assets/66696d8df897b5cdab7619f4_santander-logo.png" width="200"/>
+<img alt="Openbank" class="hp-hero-logo" loading="lazy" src="/assets/66696d8dbb6e5f4988e7da23_openbank-logo.png" width="203"/>
+<img alt="Caixabank" class="hp-hero-logo" loading="lazy" src="/assets/66696d8b5d357ea04d4d2d88_caixabank-logo.png" width="200"/>
+<img alt="Contiki" class="hp-hero-logo is-small" loading="lazy" src="/assets/66696d8c73c9e85f4d3f4842_contiki-logo.png" width="120"/>
+<img alt="TalentoMobile" class="hp-hero-logo" loading="lazy" sizes="100vw" src="/assets/66696d8d18cf1dc95d61a957_talento-logo.png" srcset="https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8d18cf1dc95d61a957_talento-logo-p-500.png 500w, https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8d18cf1dc95d61a957_talento-logo.png 588w" width="230"/>
+<img alt="Coforge" class="hp-hero-logo" loading="lazy" src="/assets/66696d8baa1489681ac9ee8e_coforge-logo.png" width="130"/>
+<img alt="Code Mettle" class="hp-hero-logo" loading="lazy" sizes="100vw" src="/assets/66696d8b59312b3be567f20c_codemettle-logo.png" srcset="https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8b59312b3be567f20c_codemettle-logo-p-500.png 500w, https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8b59312b3be567f20c_codemettle-logo.png 542w" width="186"/>
+<img alt="Cintep" class="hp-hero-logo" loading="lazy" src="/assets/6669bcf7054cc66656d4b794_cintep-logo.png" width="150"/>
+<img alt="Africa Point" class="hp-hero-logo" loading="lazy" src="/assets/6669bcf7851efbe1ef02b55f_africapoint-logo.png" width="75"/>
+<img alt="Coliban Water" class="hp-hero-logo" loading="lazy" src="/assets/66696d8c801a1c9d18fbc791_coliban-logo.png" width="135"/>
+<img alt="FahrradXXL" class="hp-hero-logo" loading="lazy" src="/assets/66696d8c971bb780fb1a1d3f_fahrrad-logo.png" width="160"/>
+<img alt="Visiolink" class="hp-hero-logo" loading="lazy" src="/assets/66696d8dcd6da8018f99a477_visionlink-logo.webp" width="95"/>
+<img alt="Dimodelo" class="hp-hero-logo" loading="lazy" src="/assets/66696d8dd67a02896096092c_dimodelo-logo.png" width="180"/>
+<img alt="Allcop Store" class="hp-hero-logo" loading="lazy" sizes="100vw" src="/assets/6669bcf71af771ba8ebd04de_allcopstore-logo.png" srcset="https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/6669bcf71af771ba8ebd04de_allcopstore-logo-p-500.png 500w, https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/6669bcf71af771ba8ebd04de_allcopstore-logo.png 508w" width="190"/>
+<img alt="Embassy of Italy" class="hp-hero-logo" loading="lazy" sizes="100vw" src="/assets/66696d8d91911199cc281fd5_italy-embassy-logo.png" srcset="https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8d91911199cc281fd5_italy-embassy-logo-p-500.png 500w, https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8d91911199cc281fd5_italy-embassy-logo.png 748w" width="250"/>
+</div>
+<div class="w-layout-hflex hp-hero-logos-c animate-strip">
+<img alt="Santander" class="hp-hero-logo" loading="lazy" src="/assets/66696d8df897b5cdab7619f4_santander-logo.png" width="190"/>
+<img alt="Openbank" class="hp-hero-logo" loading="lazy" src="/assets/66696d8dbb6e5f4988e7da23_openbank-logo.png" width="190"/>
+<img alt="Caixabank" class="hp-hero-logo" loading="lazy" src="/assets/66696d8b5d357ea04d4d2d88_caixabank-logo.png" width="200"/>
+<img alt="Contiki" class="hp-hero-logo is-small" loading="lazy" src="/assets/66696d8c73c9e85f4d3f4842_contiki-logo.png" width="131"/>
+<img alt="TalentoMobile" class="hp-hero-logo" loading="lazy" sizes="100vw" src="/assets/66696d8d18cf1dc95d61a957_talento-logo.png" srcset="https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8d18cf1dc95d61a957_talento-logo-p-500.png 500w, https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8d18cf1dc95d61a957_talento-logo.png 588w" width="285"/>
+<img alt="Coforge" class="hp-hero-logo" loading="lazy" src="/assets/66696d8baa1489681ac9ee8e_coforge-logo.png" width="149"/>
+<img alt="Code Mettle" class="hp-hero-logo" loading="lazy" sizes="100vw" src="/assets/66696d8b59312b3be567f20c_codemettle-logo.png" srcset="https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8b59312b3be567f20c_codemettle-logo-p-500.png 500w, https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8b59312b3be567f20c_codemettle-logo.png 542w" width="186"/>
+<img alt="Cintep" class="hp-hero-logo" loading="lazy" src="/assets/6669bcf7054cc66656d4b794_cintep-logo.png" width="156"/>
+<img alt="Africa Point" class="hp-hero-logo" loading="lazy" src="/assets/6669bcf7851efbe1ef02b55f_africapoint-logo.png" width="82"/>
+<img alt="Coliban Water" class="hp-hero-logo" loading="lazy" src="/assets/66696d8c801a1c9d18fbc791_coliban-logo.png" width="159"/>
+<img alt="FahrradXXL" class="hp-hero-logo" loading="lazy" src="/assets/66696d8c971bb780fb1a1d3f_fahrrad-logo.png" width="165"/>
+<img alt="Visiolink" class="hp-hero-logo" loading="lazy" src="/assets/66696d8dcd6da8018f99a477_visionlink-logo.webp" width="103"/>
+<img alt="Dimodelo" class="hp-hero-logo" loading="lazy" src="/assets/66696d8dd67a02896096092c_dimodelo-logo.png" width="192"/>
+<img alt="Allcop Store" class="hp-hero-logo" loading="lazy" sizes="100vw" src="/assets/6669bcf71af771ba8ebd04de_allcopstore-logo.png" srcset="https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/6669bcf71af771ba8ebd04de_allcopstore-logo-p-500.png 500w, https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/6669bcf71af771ba8ebd04de_allcopstore-logo.png 508w" width="199"/>
+<img alt="Embassy of Italy" class="hp-hero-logo" loading="lazy" sizes="100vw" src="/assets/66696d8d91911199cc281fd5_italy-embassy-logo.png" srcset="https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8d91911199cc281fd5_italy-embassy-logo-p-500.png 500w, https://cdn.prod.website-files.com/666442ad532fbc42e5295b99/66696d8d91911199cc281fd5_italy-embassy-logo.png 748w" width="276"/>
+</div>
+</div>
+</main>
+<script src="/assets/jquery-3.5.1.min.dc5e7f18c8.js" type="text/javascript">
+</script>
+<script src="/assets/webflow.729c5b911277cffeef3934f6d4080ea0.js" type="text/javascript">
+</script>
+<script>
+   const webflow = window.Webflow || [];
+  webflow.push(function () {
+    const homeScript = document.createElement('script');
+ 	  
+    homeScript.src = 'https://script-server-one.vercel.app/home.js';
+
+    
+    homeScript.defer = true; 
+         
+    document.body.appendChild(homeScript);
+    
+  })
+  </script>
+</body>
+</html>
