@@ -2884,6 +2884,10 @@ figcaption {
   max-width: 95rem;
 }
 
+.container-large.padding-global.projects {
+  position: relative;
+}
+
 .container-large.navbar-padding {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -4873,10 +4877,6 @@ figcaption {
   width: 2.2rem;
 }
 
-.carousel-c {
-  position: relative;
-}
-
 .card-project-tite {
   color: var(--background-color--home-accent);
   margin-top: 0;
@@ -5386,6 +5386,11 @@ figcaption {
   .container-large.padding-section-large.padding-global {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .container-large.padding-global.projects {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .container-large.navbar-padding:where(.w-variant-a09df2f1-a7b3-6e4c-146c-8b83bf81dd57) {

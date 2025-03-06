@@ -10,7 +10,7 @@
 <meta content="Luis Portfolio - CaixaBank" property="twitter:title"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Webflow" name="generator"/>
-<link href="/assets/luis-portfolio-01.webflow.e377a98be.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/luis-portfolio-01.webflow.247543fee.css" rel="stylesheet" type="text/css"/>
 <link href="/assets/fonts.googleapis.com" rel="preconnect"/>
 <link href="/assets/fonts.gstatic.com" rel="preconnect"/>
 <script src="/assets/webfont.js" type="text/javascript">
@@ -250,15 +250,21 @@ margin: 0rem !important;
         }
     }
     
-    
 
 
-.carousel-seat .project-overlay {
-  opacity: 0;
+@media (min-width: 992px) {
+  .carousel-seat .project-overlay {
+    opacity: 0;
+  }
+  .carousel-seat:hover .project-overlay {
+    opacity: 1;
+  }
 }
 
-.carousel-seat:hover .project-overlay {
-  opacity: 1;
+@media (max-width: 991px) {
+  .carousel-seat .project-overlay {
+    opacity: 0; 
+  }
 }
 
 .carousel-container {
@@ -270,11 +276,13 @@ margin: 0rem !important;
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 0.90; 
   }
 }
+
+
+
 
 
 .plusminus {
@@ -687,7 +695,7 @@ margin: 0rem !important;
 </div>
 </div>
 <div class="spacing-l">
-<div class="carousel-c">
+<div class="container-large padding-global projects">
 <div class="swiper-button prev">
 <div class="w-embed">
 <svg fill="none" height="40" viewbox="0 0 40 36" width="40" xmlns="http://www.w3.org/2000/svg">

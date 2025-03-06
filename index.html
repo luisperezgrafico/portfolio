@@ -10,7 +10,7 @@
 <meta content="Luis Portflio" property="twitter:title"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Webflow" name="generator"/>
-<link href="/assets/luis-portfolio-01.webflow.e377a98be.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/luis-portfolio-01.webflow.247543fee.css" rel="stylesheet" type="text/css"/>
 <link href="/assets/fonts.googleapis.com" rel="preconnect"/>
 <link href="/assets/fonts.gstatic.com" rel="preconnect"/>
 <script src="/assets/webfont.js" type="text/javascript">
@@ -324,15 +324,21 @@ margin: 0rem !important;
         }
     }
     
-    
 
 
-.carousel-seat .project-overlay {
-  opacity: 0;
+@media (min-width: 992px) {
+  .carousel-seat .project-overlay {
+    opacity: 0;
+  }
+  .carousel-seat:hover .project-overlay {
+    opacity: 1;
+  }
 }
 
-.carousel-seat:hover .project-overlay {
-  opacity: 1;
+@media (max-width: 991px) {
+  .carousel-seat .project-overlay {
+    opacity: 0; 
+  }
 }
 
 .carousel-container {
@@ -344,11 +350,13 @@ margin: 0rem !important;
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 0.90; 
   }
 }
+
+
+
 
 
 .plusminus {
@@ -587,7 +595,7 @@ margin: 0rem !important;
 </div>
 </section>
 <section class="hp-projects-s" id="projects">
-<div class="container-large padding-global projects">
+<div class="container-large padding-global">
 <div class="hero-layout">
 <div class="hero-layout-horizontal">
 <div class="hero-title" id="w-node-_8ace21bd-a74f-7c99-445a-3bd9b78cad6c-e5295bd7">
@@ -633,7 +641,9 @@ margin: 0rem !important;
 </div>
 </div>
 </div>
-<div class="carousel-c">
+</div>
+</div>
+<div class="container-large padding-global projects">
 <div class="swiper-button prev">
 <div class="w-embed">
 <svg fill="none" height="40" viewbox="0 0 40 36" width="40" xmlns="http://www.w3.org/2000/svg">
@@ -662,27 +672,27 @@ margin: 0rem !important;
 <div class="overlay-content">
 <div class="overlay-header">
 <div class="card-project-client">
-               Contiki Holidays
-              </div>
+             Contiki Holidays
+            </div>
 <div class="card-project-title">
-               Retail / Agents website
-              </div>
+             Retail / Agents website
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Role
-              </div>
+             Role
+            </div>
 <div class="card-project-description">
-               UI/UX Designer
-              </div>
+             UI/UX Designer
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Skills / Tools
-              </div>
+             Skills / Tools
+            </div>
 <div class="card-project-description">
-               UI/UX Design, Component Guidelines, Design System
-              </div>
+             UI/UX Design, Component Guidelines, Design System
+            </div>
 </div>
 </div>
 <img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
@@ -696,27 +706,27 @@ margin: 0rem !important;
 <div class="overlay-content">
 <div class="overlay-header">
 <div class="card-project-client">
-               Santander Bank
-              </div>
+             Santander Bank
+            </div>
 <div class="card-project-title">
-               Globile App
-              </div>
+             Globile App
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Role
-              </div>
+             Role
+            </div>
 <div class="card-project-description">
-               UI/UX Designer
-              </div>
+             UI/UX Designer
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Skills / Tools
-              </div>
+             Skills / Tools
+            </div>
 <div class="card-project-description">
-               Mobile App, Design System, UI/UX.
-              </div>
+             Mobile App, Design System, UI/UX.
+            </div>
 </div>
 </div>
 <img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
@@ -730,27 +740,27 @@ margin: 0rem !important;
 <div class="overlay-content">
 <div class="overlay-header">
 <div class="card-project-client">
-               Openbank
-              </div>
+             Openbank
+            </div>
 <div class="card-project-title">
-               Wealth components
-              </div>
+             Wealth components
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Role
-              </div>
+             Role
+            </div>
 <div class="card-project-description">
-               UI/UX Designer
-              </div>
+             UI/UX Designer
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Skills / Tools
-              </div>
+             Skills / Tools
+            </div>
 <div class="card-project-description">
-               Component Guidelines, Design System, UI/UX.
-              </div>
+             Component Guidelines, Design System, UI/UX.
+            </div>
 </div>
 </div>
 <img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
@@ -764,27 +774,27 @@ margin: 0rem !important;
 <div class="overlay-content">
 <div class="overlay-header">
 <div class="card-project-client">
-               CaixaBank
-              </div>
+             CaixaBank
+            </div>
 <div class="card-project-title">
-               Omnia 2 components
-              </div>
+             Omnia 2 components
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Role
-              </div>
+             Role
+            </div>
 <div class="card-project-description">
-               Accessibility Analyst
-              </div>
+             Accessibility Analyst
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Skills / Tools
-              </div>
+             Skills / Tools
+            </div>
 <div class="card-project-description">
-               Accessibility Analysis JAWS, NVDA, Voiceover Testing WCGA 2.1 compliance
-              </div>
+             Accessibility Analysis JAWS, NVDA, Voiceover Testing WCGA 2.1 compliance
+            </div>
 </div>
 </div>
 <img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
@@ -798,27 +808,27 @@ margin: 0rem !important;
 <div class="overlay-content">
 <div class="overlay-header">
 <div class="card-project-client">
-               Localyzer
-              </div>
+             Localyzer
+            </div>
 <div class="card-project-title">
-               Web/CMS Development
-              </div>
+             Web/CMS Development
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Role
-              </div>
+             Role
+            </div>
 <div class="card-project-description">
-               Webflow Developer
-              </div>
+             Webflow Developer
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Skills / Tools
-              </div>
+             Skills / Tools
+            </div>
 <div class="card-project-description">
-               Webflow, GSAP, Javascript, HTML, CSS, Vercel
-              </div>
+             Webflow, GSAP, Javascript, HTML, CSS, Vercel
+            </div>
 </div>
 </div>
 <img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
@@ -832,27 +842,27 @@ margin: 0rem !important;
 <div class="overlay-content">
 <div class="overlay-header">
 <div class="card-project-client">
-               Ginom
-              </div>
+             Ginom
+            </div>
 <div class="card-project-title">
-               Web/CMS Development
-              </div>
+             Web/CMS Development
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Role
-              </div>
+             Role
+            </div>
 <div class="card-project-description">
-               Webflow Developer
-              </div>
+             Webflow Developer
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Skills / Tools
-              </div>
+             Skills / Tools
+            </div>
 <div class="card-project-description">
-               Webflow, GSAP, Javascript, HTML, CSS, Vercel
-              </div>
+             Webflow, GSAP, Javascript, HTML, CSS, Vercel
+            </div>
 </div>
 </div>
 <img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
@@ -866,27 +876,27 @@ margin: 0rem !important;
 <div class="overlay-content">
 <div class="overlay-header">
 <div class="card-project-client">
-               Adastra
-              </div>
+             Adastra
+            </div>
 <div class="card-project-title">
-               Blockchain Project
-              </div>
+             Blockchain Project
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Role
-              </div>
+             Role
+            </div>
 <div class="card-project-description">
-               UI/UX Designer / Webflow Developer
-              </div>
+             UI/UX Designer / Webflow Developer
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Skills / Tools
-              </div>
+             Skills / Tools
+            </div>
 <div class="card-project-description">
-               Webflow, JS, Model Viewer, Animations
-              </div>
+             Webflow, JS, Model Viewer, Animations
+            </div>
 </div>
 </div>
 <img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
@@ -900,35 +910,33 @@ margin: 0rem !important;
 <div class="overlay-content">
 <div class="overlay-header">
 <div class="card-project-client">
-               Fahrrad XXL
-              </div>
+             Fahrrad XXL
+            </div>
 <div class="card-project-title">
-               Homepage / HR career portal
-              </div>
+             Homepage / HR career portal
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Role
-              </div>
+             Role
+            </div>
 <div class="card-project-description">
-               UI/UX Designer
-              </div>
+             UI/UX Designer
+            </div>
 </div>
 <div class="overlay-description">
 <div class="card-project-tite">
-               Skills / Tools
-              </div>
+             Skills / Tools
+            </div>
 <div class="card-project-description">
-               UI/UX Design, Sketch, Component library
-              </div>
+             UI/UX Design, Sketch, Component library
+            </div>
 </div>
 </div>
 <img alt="" class="overlay-arrow" height="29.000001907348633" loading="lazy" src="/assets/66981991e71aecc5a626098f_Vectors-Wrapper.svg"/>
 </div>
 </a>
 <img alt="" class="carousel-img" loading="lazy" src="/assets/6745d1276cb979c43a6150a2_fahrrad_card.webp" width="390"/>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1252,8 +1260,7 @@ margin: 0rem !important;
   webflow.push(function () {
     const homeScript = document.createElement('script');
  	  
-    homeScript.src = 'https://script-server-one.vercel.app/home.js';
-
+    homeScript.src = 'http://127.0.0.1:4173/home.js';
 
     
     homeScript.defer = true; 
