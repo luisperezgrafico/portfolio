@@ -4903,6 +4903,10 @@ figcaption {
   inset: auto 0% -5rem;
 }
 
+.plusminus {
+  pointer-events: none;
+}
+
 @media screen and (min-width: 1920px) {
   h1 {
     font-size: 3.5rem;
@@ -5738,10 +5742,8 @@ figcaption {
   .hero-layout-horizontal {
     grid-row-gap: .625rem;
     flex: 1;
-    grid-template-columns: 2.75fr .5fr;
-    grid-template-areas: "cell-1 ."
-                         "cell-2 ."
-                         "cell-3 cell-4";
+    grid-template: "cell-1"
+    / 2.75fr .5fr;
   }
 
   .hp-hero-logos-c.animate-strip {
@@ -6759,13 +6761,8 @@ figcaption {
     padding-right: 0;
   }
 
-  .services-container {
+  .services-container, .hero-layout {
     margin-top: 2rem;
-  }
-
-  .hero-layout {
-    margin-top: 2rem;
-    padding-bottom: 3rem;
   }
 
   .carousel-img {
