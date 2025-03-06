@@ -10,7 +10,7 @@
 <meta content="Luis Portfolio - Contiki" property="twitter:title"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Webflow" name="generator"/>
-<link href="/assets/luis-portfolio-01.webflow.14edf1d66.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/luis-portfolio-01.webflow.e377a98be.css" rel="stylesheet" type="text/css"/>
 <link href="/assets/fonts.googleapis.com" rel="preconnect"/>
 <link href="/assets/fonts.gstatic.com" rel="preconnect"/>
 <script src="/assets/webfont.js" type="text/javascript">
@@ -274,6 +274,44 @@ margin: 0rem !important;
   100% {
     opacity: 0.90; 
   }
+}
+
+
+.plusminus {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	
+	&.active {
+		&:before {
+			transform: translatey(-50%) rotate(-90deg);
+			opacity: 0;
+		}
+		&:after {
+			transform: translatey(-50%) rotate(0);
+		}
+	}
+	
+	&:before , &:after {
+		content: "";
+		display: block;
+		background-color: #131416;
+		position: absolute;		
+		top: 50%; left: 0;
+		transition: .35s;
+		width: 100%;
+		height: 2px;
+	}
+	
+	&:before {		
+		transform: translatey(-50%);
+	}
+	
+	&:after {
+		transform: translatey(-50%) rotate(90deg);
+	}
+	
 }
     </style>
 </div>
@@ -822,6 +860,10 @@ margin: 0rem !important;
 <path clip-rule="evenodd" d="M24.0404 10.9594C24.431 11.3499 24.431 11.9831 24.0404 12.3736L16.4142 19.9998L24.0404 27.6261C24.431 28.0166 24.431 28.6498 24.0404 29.0403C23.6499 29.4308 23.0168 29.4308 22.6262 29.0403L14.2929 20.7069C13.9024 20.3164 13.9024 19.6833 14.2929 19.2927L22.6262 10.9594C23.0168 10.5689 23.6499 10.5689 24.0404 10.9594Z" fill="currentColor" fill-rule="evenodd">
 </path>
 </svg>
+</div>
+</div>
+<div class="card-more-btn" role="button">
+<div class="plusminus">
 </div>
 </div>
 <div class="swiper-carousel carousel-container w-dyn-list">

@@ -3908,14 +3908,10 @@ figcaption {
 }
 
 .overlay-arrow {
-  object-fit: cover;
   flex: none;
   justify-content: center;
   align-items: center;
-  width: 34px;
   max-width: 34px;
-  height: 29px;
-  text-decoration: none;
   display: flex;
 }
 
@@ -4892,6 +4888,21 @@ figcaption {
   text-decoration: none;
 }
 
+.card-more-btn {
+  z-index: 2;
+  aspect-ratio: 1;
+  background-color: var(--background-color--home-accent);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  position: absolute;
+  inset: auto 0% -5rem;
+}
+
 @media screen and (min-width: 1920px) {
   h1 {
     font-size: 3.5rem;
@@ -5521,7 +5532,12 @@ figcaption {
   }
 
   .overlay-wrapper {
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+
+  .overlay-arrow {
+    object-fit: contain;
+    max-width: 30px;
   }
 
   .social-container {
@@ -5752,6 +5768,18 @@ figcaption {
 
   .hp-projects-s.bg-home-background.scroll-snap {
     padding-bottom: 3rem;
+  }
+
+  .card-more-btn {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .plusminus-c {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -6091,6 +6119,10 @@ figcaption {
     font-size: 1rem;
   }
 
+  .overlay-arrow {
+    max-width: 24px;
+  }
+
   .header-text {
     flex: 1;
     margin-left: -1rem;
@@ -6222,7 +6254,6 @@ figcaption {
 
   .hero-layout {
     margin-bottom: 0;
-    overflow: hidden;
   }
 
   .carousel-seat.swiper-slide {
